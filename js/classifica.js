@@ -20,35 +20,45 @@ async function caricaClassificaAutomatica() {
         });
 
         partite.forEach(partita => {
-            if (partita.status === 'giocata') {
-                const casa = partita.squadraCasa;
-                const ospite = partita.squadraOspite;
-                const golCasa = partita.golCasa;
-                const golOspite = partita.golOspite;
+    if (partita.status === 'giocata') {
+        const casa = partita.squadraCasa;
+        const ospite = partita.squadraOspite;
+        const golCasa = partita.golCasa;
+        const golOspite = partita.golOspite;
 
-                classifica[casa].giocate++;
-                classifica[ospite].giocate++;
-                classifica[casa].gf += golCasa;
-                classifica[casa].gs += golOspite;
-                classifica[ospite].gf += golOspite;
-                classifica[ospite].gs += golCasa;
+        classifica[casa].giocate++;
+        classifica[ospite].giocate++;
+        classifica[casa].gf += golCasa;
+        classifica[casa].gs += golOspite;
+        classifica[ospite].gf += golOspite;
+        classifica[ospite].gs += golCasa;
 
-                if (golCasa > golOspite) {
-                    classifica[casa].vittorie++;
-                    classifica[casa].punti += 3;
-                    classifica[ospite].sconfitte++;
-                } else if (golOspite > golCasa) {
-                    classifica[ospite].vittorie++;
-                    classifica[ospite].punti += 3;
-                    classifica[casa].sconfitte++;
-                } else {
-                    classifica[casa].pareggi++;
-                    classifica[ospite].pareggi++;
-                    classifica[casa].punti += 1;
-                    classifica[ospite].punti += 1;
-                }
+        if (golCasa > golOspite) {
+            // Vittoria netta
+            classifica[casa].vittorie++;
+            classifica[casa].punti += 3;
+            classifica[ospite].sconfitte++;
+        } else if (golOspite > golCasa) {
+            // Vittoria netta
+            classifica[ospite].vittorie++;
+            classifica[ospite].punti += 3;
+            classifica[casa].sconfitte++;
+        } else {
+            // PAREGGIO (1 punto a testa di base)
+            classifica[casa].pareggi++;
+            classifica[ospite].pareggi++;
+            classifica[casa].punti += 1;
+            classifica[ospite].punti += 1;
+
+            // Bonus Shootout (+1 extra a chi vince, totale 2)
+            if (partita.vincitoreShootout === casa) {
+                classifica[casa].punti += 1; 
+            } else if (partita.vincitoreShootout === ospite) {
+                classifica[ospite].punti += 1;
             }
-        });
+        }
+    }
+});
 
         const classificaArray = Object.keys(classifica).map(nomeSquadra => {
             const stats = classifica[nomeSquadra];
