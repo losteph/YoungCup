@@ -12,9 +12,9 @@
     "giornata": 1,
     "squadraCasa": "I Gladiatori",
     "squadraOspite": "L'Equilibrio",
-    "golCasa": null,
-    "golOspite": null,
-    "status": "da giocare",
+    "golCasa": 1,
+    "golOspite": 1,
+    "status": "giocata",
     "data": "Sab 15/11", "ora": "19:00"
   },
   {
