@@ -1,7 +1,7 @@
 [
   {
     "nome": "I Titanici",
-    
+    "presidente": "Gianni Gianni",
     "rosa": [
       { "nome": "Marco Donati", "ruolo": "Portiere" },
       { "nome": "Luca Costa", "ruolo": "Difensore" },
@@ -11,8 +11,7 @@
       { "nome": "Francesco Gallo", "ruolo": "Centrocampista" },
       { "nome": "Davide Marini", "ruolo": "Centrocampista" },
       { "nome": "Matteo Valli", "ruolo": "Attaccante" }
-    ],
-    "presidente": "Gianni Gianni"
+    ]
   },
   {
     "nome": "I Gladiatori",
