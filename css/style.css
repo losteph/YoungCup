@@ -190,7 +190,7 @@ table tbody td:nth-child(3) {
 .presidente-box {
     background-color: #f0f4f8; /* Un azzurro molto chiaro */
     padding: 10px 15px;
-    border-left: 4px solid #0a2f5c; /* Barretta laterale blu scuro */
+    /* border-left: 4px solid #0a2f5c;  Barretta laterale blu scuro */
     margin: 10px 15px;
     border-radius: 4px;
     display: flex;
@@ -252,7 +252,7 @@ table tbody td:nth-child(3) {
 
 
 .logo-img {
-    max-height: 85x; /* Aumentato per sostituire degnamente il titolo */
+    max-height: 65x; /* Aumentato per sostituire degnamente il titolo */
     width: auto;
     object-fit: contain;
     display: block;
