@@ -252,7 +252,7 @@ table tbody td:nth-child(3) {
 
 
 .logo-img {
-    max-height: 100x; /* Aumentato per sostituire degnamente il titolo */
+    max-height: 95x; /* Aumentato per sostituire degnamente il titolo */
     width: auto;
     object-fit: contain;
     display: block;
@@ -260,7 +260,7 @@ table tbody td:nth-child(3) {
 }
 
 .header-content {
-    padding: 10px 0; /* Riduce lo spazio verticale ora che non c'è il testo */
+    padding: 5px 0; /* Riduce lo spazio verticale ora che non c'è il testo */
     display: block;  /* Cambiato da flex a block per centratura semplice */
     text-align: center;
 }
@@ -283,7 +283,7 @@ table tbody td:nth-child(3) {
 .match-team {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     font-weight: bold;
 }
 
@@ -308,8 +308,8 @@ table tbody td:nth-child(3) {
 
 /* Assicuriamoci che i mini-logo siano consistenti ovunque */
 .mini-logo {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     object-fit: contain;
     flex-shrink: 0;
 }
@@ -319,13 +319,13 @@ table tbody td:nth-child(3) {
 .tabella-squadra-logo {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
 }
 
 /* Logo piccolissimo per Classifica e Marcatori */
 .mini-logo {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     object-fit: contain;
     flex-shrink: 0;
     border-radius: 50%; /* Opzionale: li rende tondi */
@@ -336,16 +336,16 @@ table tbody td:nth-child(3) {
 .squadra-header-logo {
     display: flex;
     align-items: center;
-    padding: 15px;
-    gap: 15px;
+    padding: 20px;
+    gap: 20px;
     background: #f8f9fa;
     border-bottom: 1px solid #eee;
 }
 
 /* Logo medio per la card squadra */
 .logo-squadra-card {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
 }
 
@@ -357,8 +357,8 @@ table tbody td:nth-child(3) {
 
 /* Aumenta leggermente i loghi solo nella sezione Partite */
 .match-team .mini-logo {
-    width: 40px;  /* Prima era 18px, ora è un po' più visibile */
-    height: 40px;
+    width: 50px;  /* Prima era 18px, ora è un po' più visibile */
+    height: 50px;
 }
 
 
