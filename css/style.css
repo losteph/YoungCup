@@ -357,8 +357,8 @@ table tbody td:nth-child(3) {
 
 /* Aumenta leggermente i loghi solo nella sezione Partite */
 .match-team .mini-logo {
-    width: 24px;  /* Prima era 18px, ora è un po' più visibile */
-    height: 24px;
+    width: 31px;  /* Prima era 18px, ora è un po' più visibile */
+    height: 31px;
 }
 
 
