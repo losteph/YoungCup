@@ -252,7 +252,7 @@ table tbody td:nth-child(3) {
 
 
 .logo-img {
-    max-height: 70px !important;
+    max-height: 100px !important;
     width: auto !important;
     display: block !important;
     margin: 0 auto !important;
