@@ -4,8 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function caricaMarcatori() {
     try {
-        const response = await fetch('dati/marcatori.json');
-        const marcatori = await response.json();
+        const [marcatoriRes, squadreRes] = await Promise.all([
+            fetch('dati/marcatori.json'),
+            fetch('dati/squadre.json')
+        ]);
+        const marcatori = await marcatoriRes.json();
+        const squadreData = await squadreRes.json();
 
         marcatori.sort((a, b) => b.gol - a.gol);
 
@@ -13,21 +17,25 @@ async function caricaMarcatori() {
         tbody.innerHTML = '';
 
         marcatori.forEach((p, index) => {
-            const riga = `
+            const squadraInfo = squadreData.find(s => s.nome === p.squadra);
+            const logoUrl = squadraInfo ? squadraInfo.logo : 'img/logo.jpeg';
+
+            tbody.innerHTML += `
                 <tr>
                     <td>${index + 1}</td>
                     <td>${p.nome}</td>
-                    <td>${p.squadra}</td>
+                    <td>
+                        <div class="tabella-squadra-logo">
+                            <img src="${logoUrl}" class="mini-logo">
+                            <span>${p.squadra}</span>
+                        </div>
+                    </td>
                     <td><strong>${p.gol}</strong></td>
                     <td>${p.assist}</td>
                     <td>${p.ammonizioni}</td>
                     <td>${p.espulsioni}</td>
                 </tr>
             `;
-            tbody.innerHTML += riga;
         });
-    } catch (error) {
-        console.error("Errore nel caricamento dei marcatori:", error);
-        document.getElementById('corpo-marcatori').innerHTML = '<tr><td colspan="7">Errore nel caricamento dati.</td></tr>';
-    }
+    } catch (e) { console.error(e); }
 }
