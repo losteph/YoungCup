@@ -1,7 +1,7 @@
 [
   {
-    "nome": "I Titanici",
-    "presidente": "Gianni Gianni",
+    "nome": "Wild Boys",
+    "presidente": "Paolo Almiento",
     "logo": "img/logo.jpeg",
     "rosa": [
       { "nome": "Marco Donati", "ruolo": "Portiere" },
@@ -15,8 +15,8 @@
     ]
   },
   {
-    "nome": "I Gladiatori",
-    "presidente": "Gianni Gianni",
+    "nome": "I Buzzicozzi",
+    "presidente": "Jonathan Cuccaro",
     "logo": "img/logo.jpeg",
     "rosa": [
       { "nome": "Alessandro Ferrari", "ruolo": "Portiere" },
@@ -30,8 +30,8 @@
     ]
   },
   {
-    "nome": "Real Scommessa",
-    "presidente": "Gianni Gianni",
+    "nome": "Sangu FC",
+    "presidente": "Gabriele Lanza",
     "logo": "img/logo.jpeg",
     "rosa": [
       { "nome": "Daniele Leone", "ruolo": "Portiere" },
@@ -45,8 +45,8 @@
     ]
   },
   {
-    "nome": "Centrocampo Forte",
-    "presidente": "Gianni Gianni",
+    "nome": "Levante X",
+    "presidente": "Marco Cucinelli",
     "logo": "img/logo.jpeg",
     "rosa": [
       { "nome": "Federico Gatti", "ruolo": "Portiere" },
@@ -60,8 +60,8 @@
     ]
   },
   {
-    "nome": "L'Equilibrio",
-    "presidente": "Gianni Gianni",
+    "nome": "I Pomodorini",
+    "presidente": "Pierantonio Sasso",
     "logo": "img/logo.jpeg",
     "rosa": [
       { "nome": "Francesco Caputo", "ruolo": "Portiere" },
@@ -75,8 +75,8 @@
     ]
   },
   {
-    "nome": "I Bomber",
-    "presidente": "Gianni Gianni",
+    "nome": "Imp",
+    "presidente": "Gianni G",
     "logo": "img/logo.jpeg",
     "rosa": [
       { "nome": "Federico Marchetti", "ruolo": "Portiere" },
