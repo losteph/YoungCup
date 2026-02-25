@@ -37,7 +37,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "aprile", "ora": "!"
+    "data": "28/04", "ora": "20:00"
   },
   {
     "giornata": 2,
@@ -47,7 +47,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "aprile", "ora": "!"
+    "data": "28/04", "ora": "20:40"
   },
   {
     "giornata": 2,
@@ -57,7 +57,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "aprile", "ora": "!"
+    "data": "28/04", "ora": "21:20"
   },
   {
     "giornata": 3,
@@ -67,7 +67,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "maggio", "ora": "!"
+    "data": "12/05", "ora": "20:00"
   },
   {
     "giornata": 3,
@@ -77,7 +77,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "maggio", "ora": "!"
+    "data": "12/05", "ora": "20:40"
   },
   {
     "giornata": 3,
@@ -87,7 +87,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "maggio", "ora": "!"
+    "data": "12/05", "ora": "21:20"
   },
   {
     "giornata": 4,
@@ -97,7 +97,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "giugno", "ora": "!"
+    "data": "09/06", "ora": "20:00"
   },
   {
     "giornata": 4,
@@ -107,7 +107,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "giugno", "ora": "!"
+    "data": "09/06", "ora": "20:40"
   },
   {
     "giornata": 4,
@@ -117,7 +117,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "giugno", "ora": "!"
+    "data": "09/06", "ora": "21:20"
   },
   {
     "giornata": 5,
@@ -127,7 +127,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "luglio", "ora": "!"
+    "data": "14/07", "ora": "20:00"
   },
   {
     "giornata": 5,
@@ -137,7 +137,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "luglio", "ora": "!"
+    "data": "14/07", "ora": "20:40"
   },
   {
     "giornata": 5,
@@ -147,6 +147,6 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "luglio", "ora": "!"
+    "data": "14/07", "ora": "21:20"
   }
 ]
