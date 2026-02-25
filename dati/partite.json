@@ -2,7 +2,7 @@
   {
   "giornata": 1,
   "squadraCasa": "Wild Boys",
-  "squadraOspite": "Imp",
+  "squadraOspite": "Imperial Seven",
   "golCasa": null,
   "golOspite": null,
   "status": "da giocare",
@@ -21,7 +21,7 @@
   },
   {
     "giornata": 1,
-    "squadraCasa": "I Pomodorini",
+    "squadraCasa": "Spinnings",
     "squadraOspite": "Sangu FC",
     "golCasa": null,
     "golOspite": null,
@@ -31,7 +31,7 @@
   },
   {
     "giornata": 2,
-    "squadraCasa": "Imp",
+    "squadraCasa": "Imperial Seven",
     "squadraOspite": "Sangu FC",
     "golCasa": null,
     "golOspite": null,
@@ -42,7 +42,7 @@
   {
     "giornata": 2,
     "squadraCasa": "Levante X",
-    "squadraOspite": "I Pomodorini",
+    "squadraOspite": "Spinnings",
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
@@ -62,7 +62,7 @@
   {
     "giornata": 3,
     "squadraCasa": "I Trogloditi",
-    "squadraOspite": "Imp",
+    "squadraOspite": "Imperial Seven",
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
@@ -72,7 +72,7 @@
   {
     "giornata": 3,
     "squadraCasa": "Wild Boys",
-    "squadraOspite": "I Pomodorini",
+    "squadraOspite": "Spinnings",
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
@@ -91,7 +91,7 @@
   },
   {
     "giornata": 4,
-    "squadraCasa": "Imp",
+    "squadraCasa": "Imperial Seven",
     "squadraOspite": "Levante X",
     "golCasa": null,
     "golOspite": null,
@@ -112,7 +112,7 @@
   {
     "giornata": 4,
     "squadraCasa": "I Trogloditi",
-    "squadraOspite": "I Pomodorini",
+    "squadraOspite": "Spinnings",
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
@@ -121,8 +121,8 @@
   },
   {
     "giornata": 5,
-    "squadraCasa": "Imp",
-    "squadraOspite": "I Pomodorini",
+    "squadraCasa": "Imperial Seven",
+    "squadraOspite": "Spinnings",
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
