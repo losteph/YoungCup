@@ -11,6 +11,24 @@ async function caricaSquadre() {
     squadre.forEach(s => {
     let giocatori = '<ul>' + s.rosa.map(g => `<li>${g.nome} <em>(${g.ruolo})</em></li>`).join('') + '</ul>';
     
+    // LOGICA CONDIZIONALE:
+    let dirigenzaHtml = "";
+    if (s.vicepresidente && s.vicepresidente.trim() !== "") {
+        // Se c'è il vice, usiamo il plurale e la virgola
+        dirigenzaHtml = `
+            <div class="dirigenza-box">
+                <span class="label-ruolo">Presidenti:</span>
+                <span class="nome-ruolo">${s.presidente}, ${s.vicepresidente}</span>
+            </div>`;
+    } else {
+        // Se non c'è, mostriamo solo il presidente come prima
+        dirigenzaHtml = `
+            <div class="dirigenza-box">
+                <span class="label-ruolo">Presidente:</span>
+                <span class="nome-ruolo">${s.presidente}</span>
+            </div>`;
+    }
+
     container.innerHTML += `
         <div class="squadra-card">
             <div class="squadra-header-logo">
@@ -18,16 +36,7 @@ async function caricaSquadre() {
                 <h3>${s.nome}</h3>
             </div>
             
-            <div class="dirigenza-box">
-                <div class="ruolo-riga">
-                    <span class="label-ruolo">Presidente:</span>
-                    <span class="nome-ruolo">${s.presidente || 'N.D.'}</span>
-                </div>
-                <div class="ruolo-riga">
-                    <span class="label-ruolo">Vice:</span>
-                    <span class="nome-ruolo">${s.vicepresidente || 'N.D.'}</span>
-                </div>
-            </div>
+            ${dirigenzaHtml}
             
             <div class="rosa-header">Rosa Giocatori</div>
             ${giocatori}
