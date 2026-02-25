@@ -361,6 +361,42 @@ table tbody td:nth-child(3) {
 }
 
 
+
+/* Box che contiene Presidente e Vice */
+.dirigenza-box {
+    background-color: #f0f4f8;
+    padding: 10px 15px;
+    margin: 10px 15px;
+    border-left: 4px solid #0a2f5c;
+    border-radius: 4px;
+}
+
+.ruolo-riga {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px; /* Spazio tra presidente e vice */
+}
+
+.ruolo-riga:last-child {
+    margin-bottom: 0;
+}
+
+.label-ruolo {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    color: #0a2f5c;
+    font-weight: bold;
+}
+
+.nome-ruolo {
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #333;
+}
+
+
+
 /* --- INIZIO STILI RESPONSIVE PER MOBILE --- */
 
 @media (max-width: 600px) {
