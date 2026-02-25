@@ -9,8 +9,8 @@ Questa repository funge da database centrale per i risultati, il calendario degl
 ## 🚀 Il Progetto
 La **CY League** è un torneo di sola andata che vede sfidarsi 6 squadre equilibrate tramite un sistema di "Draft" gestito dai Presidenti. 
 - **Format:** 6 Squadre | 10 Giocatori per team.
-- **Matchday:** 3 partite da 45' giocate consecutivamente in uno slot da 2 ore.
+- **Matchday:** 3 partite da 35' giocate consecutivamente in uno slot da 2 ore.
 - **Particolarità:** Presidenze attive (rigori presidenziali), interviste post-partita e FantaCalcio giornaliero a crediti.
 
 ---
-*Ultimo aggiornamento: 17 Febbraio 2026*
+*Ultimo aggiornamento: 28 Febbraio 2026*
