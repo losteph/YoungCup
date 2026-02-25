@@ -369,17 +369,11 @@ table tbody td:nth-child(3) {
     margin: 10px 15px;
     border-left: 4px solid #0a2f5c;
     border-radius: 4px;
-}
-
-.ruolo-riga {
-    display: flex;
+    display: flex; /* Mette etichetta e nomi sulla stessa riga */
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 5px; /* Spazio tra presidente e vice */
-}
-
-.ruolo-riga:last-child {
-    margin-bottom: 0;
+    flex-wrap: wrap; /* Se i nomi sono lunghi, vanno a capo bene */
+    gap: 10px;
 }
 
 .label-ruolo {
@@ -393,8 +387,8 @@ table tbody td:nth-child(3) {
     font-size: 0.9em;
     font-weight: 600;
     color: #333;
+    text-align: right;
 }
-
 
 
 /* --- INIZIO STILI RESPONSIVE PER MOBILE --- */
