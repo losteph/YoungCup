@@ -1,48 +1,38 @@
 [
   {
   "giornata": 1,
-  "squadraCasa": "I Titanici",
-  "squadraOspite": "I Bomber",
+  "squadraCasa": "Wild Boys",
+  "squadraOspite": "Imp",
   "golCasa": null,
   "golOspite": null,
   "status": "da giocare",
   "vincitoreShootout": null, 
-  "data": "fine marzo", "ora": "!"
+  "data": "31/03", "ora": "20:00"
   },
   {
     "giornata": 1,
-    "squadraCasa": "I Gladiatori",
-    "squadraOspite": "L'Equilibrio",
+    "squadraCasa": "I Trogloditi",
+    "squadraOspite": "Levante X",
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null, 
-    "data": "fine marzo", "ora": "!"
+    "data": "31/03", "ora": "20:40"
   },
   {
     "giornata": 1,
-    "squadraCasa": "Real Scommessa",
-    "squadraOspite": "Centrocampo Forte",
+    "squadraCasa": "I Pomodorini",
+    "squadraOspite": "Sangu FC",
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "fine marzo", "ora": "!"
+    "data": "31/03", "ora": "21:20"
   },
   {
     "giornata": 2,
-    "squadraCasa": "I Bomber",
-    "squadraOspite": "Centrocampo Forte",
-    "golCasa": null,
-    "golOspite": null,
-    "status": "da giocare",
-    "vincitoreShootout": null,
-    "data": "aprile", "ora": "!"
-  },
-  {
-    "giornata": 2,
-    "squadraCasa": "L'Equilibrio",
-    "squadraOspite": "Real Scommessa",
+    "squadraCasa": "Imp",
+    "squadraOspite": "Sangu FC",
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
@@ -51,8 +41,18 @@
   },
   {
     "giornata": 2,
-    "squadraCasa": "I Titanici",
-    "squadraOspite": "I Gladiatori",
+    "squadraCasa": "Levante X",
+    "squadraOspite": "I Pomodorini",
+    "golCasa": null,
+    "golOspite": null,
+    "status": "da giocare",
+    "vincitoreShootout": null,
+    "data": "aprile", "ora": "!"
+  },
+  {
+    "giornata": 2,
+    "squadraCasa": "Wild Boys",
+    "squadraOspite": "I Trogloditi",
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
@@ -61,8 +61,8 @@
   },
   {
     "giornata": 3,
-    "squadraCasa": "I Gladiatori",
-    "squadraOspite": "I Bomber",
+    "squadraCasa": "I Trogloditi",
+    "squadraOspite": "Imp",
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
@@ -71,8 +71,8 @@
   },
   {
     "giornata": 3,
-    "squadraCasa": "Real Scommessa",
-    "squadraOspite": "I Titanici",
+    "squadraCasa": "Wild Boys",
+    "squadraOspite": "I Pomodorini",
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
@@ -81,8 +81,8 @@
   },
   {
     "giornata": 3,
-    "squadraCasa": "Centrocampo Forte",
-    "squadraOspite": "L'Equilibrio",
+    "squadraCasa": "Sangu FC",
+    "squadraOspite": "Levante X",
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
@@ -91,8 +91,8 @@
   },
   {
     "giornata": 4,
-    "squadraCasa": "I Bomber",
-    "squadraOspite": "L'Equilibrio",
+    "squadraCasa": "Imp",
+    "squadraOspite": "Levante X",
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
@@ -101,8 +101,8 @@
   },
   {
     "giornata": 4,
-    "squadraCasa": "I Titanici",
-    "squadraOspite": "Centrocampo Forte",
+    "squadraCasa": "Sangu FC",
+    "squadraOspite": "Wild Boys",
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
@@ -111,8 +111,8 @@
   },
   {
     "giornata": 4,
-    "squadraCasa": "I Gladiatori",
-    "squadraOspite": "Real Scommessa",
+    "squadraCasa": "I Trogloditi",
+    "squadraOspite": "I Pomodorini",
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
@@ -121,8 +121,8 @@
   },
   {
     "giornata": 5,
-    "squadraCasa": "Real Scommessa",
-    "squadraOspite": "I Bomber",
+    "squadraCasa": "Imp",
+    "squadraOspite": "I Pomodorini",
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
@@ -131,8 +131,8 @@
   },
   {
     "giornata": 5,
-    "squadraCasa": "Centrocampo Forte",
-    "squadraOspite": "I Gladiatori",
+    "squadraCasa": "Sangu FC",
+    "squadraOspite": "I Trogloditi",
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
@@ -141,8 +141,8 @@
   },
   {
     "giornata": 5,
-    "squadraCasa": "L'Equilibrio",
-    "squadraOspite": "I Titanici",
+    "squadraCasa": "Levante X",
+    "squadraOspite": "Wild Boys",
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
