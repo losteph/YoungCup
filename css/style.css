@@ -327,8 +327,8 @@ table tbody td:nth-child(3) {
     height: 28px;
     object-fit: contain;
     flex-shrink: 0;
-    border-radius: 50%; /* Opzionale: li rende tondi */
-    background: #fff;   /* Opzionale: dà uno sfondo bianco se il logo è scuro */
+    border-radius: 0; /* Opzionale: li rende tondi */
+    background: transparent;  
 }
 
 /* Header della card squadra */
@@ -343,9 +343,11 @@ table tbody td:nth-child(3) {
 
 /* Logo medio per la card squadra */
 .logo-squadra-card {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     object-fit: contain;
+    border-radius: 0;
+    padding: 2px;
 }
 
 .squadra-header-logo h3 {
