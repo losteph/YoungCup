@@ -12,7 +12,7 @@
   {
     "giornata": 1,
     "squadraCasa": "I Trogloditi",
-    "squadraOspite": "Levante X",
+    "squadraOspite": "Marlboro Goal",
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
@@ -41,7 +41,7 @@
   },
   {
     "giornata": 2,
-    "squadraCasa": "Levante X",
+    "squadraCasa": "Marlboro Goal",
     "squadraOspite": "Spinnings",
     "golCasa": null,
     "golOspite": null,
@@ -82,7 +82,7 @@
   {
     "giornata": 3,
     "squadraCasa": "Sangu FC",
-    "squadraOspite": "Levante X",
+    "squadraOspite": "Marlboro Goal",
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
@@ -92,7 +92,7 @@
   {
     "giornata": 4,
     "squadraCasa": "Imperial Seven",
-    "squadraOspite": "Levante X",
+    "squadraOspite": "Marlboro Goal",
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
@@ -141,7 +141,7 @@
   },
   {
     "giornata": 5,
-    "squadraCasa": "Levante X",
+    "squadraCasa": "Marlboro Goal",
     "squadraOspite": "Wild Boys",
     "golCasa": null,
     "golOspite": null,
