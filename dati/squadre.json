@@ -18,7 +18,7 @@
     "nome": "I Trogloditi",
     "presidente": "Jonathan Cuccaro",
     "vicepresidente": "Pierantonio Sasso",
-    "logo": "img/Troglodoti.png",
+    "logo": "img/Trogloditi.png",
     "rosa": [
       { "nome": "Alessandro Ferrari", "ruolo": "Portiere" },
       { "nome": "Stefano Conti", "ruolo": "Difensore" },
@@ -61,10 +61,10 @@
     ]
   },
   {
-    "nome": "Spinnings",
+    "nome": "Real MyDrip",
     "presidente": "Dudi Di Ruberto",
     "vicepresidente": "Domenico Tiritiello",
-    "logo": "img/logo.jpeg",
+    "logo": "img/Drip.png",
     "rosa": [
       { "nome": "Francesco Caputo", "ruolo": "Portiere" },
       { "nome": "Marco Silvestri", "ruolo": "Portiere" },
