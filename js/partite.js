@@ -26,7 +26,14 @@ async function caricaPartite() {
                 }
                 currentGiornata = partita.giornata;
                 giornataHtml = `<h3>Giornata ${currentGiornata}</h3>`;
+
+                // Se è una partita di playoff, usa la descrizione invece del numero giornata
+                let titolo = partita.fase === "playoff" ? "🏆 FASE FINALE" : `Giornata ${currentGiornata}`;
+                giornataHtml = `<h3>${titolo}</h3>`;
             }
+
+            // Se è un playoff, aggiungi la descrizione (es. "Semifinale 1") sotto il risultato
+            let descPlayoff = partita.descrizione ? `<div class="playoff-label">${partita.descrizione}</div>` : "";
 
             // Recuperiamo i loghi delle due squadre
             const infoCasa = squadreData.find(s => s.nome === partita.squadraCasa);
