@@ -1,6 +1,7 @@
 [
   {
   "giornata": 1,
+  "fase": "regolare",
   "squadraCasa": "Wild Boys",
   "squadraOspite": "Imperial Seven",
   "golCasa": null,
@@ -11,6 +12,7 @@
   },
   {
     "giornata": 1,
+    "fase": "regolare",
     "squadraCasa": "I Trogloditi",
     "squadraOspite": "Marlboro Goal",
     "golCasa": null,
@@ -21,6 +23,7 @@
   },
   {
     "giornata": 1,
+    "fase": "regolare",
     "squadraCasa": "Real MyDrip",
     "squadraOspite": "Sangu FC",
     "golCasa": null,
@@ -31,6 +34,7 @@
   },
   {
     "giornata": 2,
+    "fase": "regolare",
     "squadraCasa": "Imperial Seven",
     "squadraOspite": "Sangu FC",
     "golCasa": null,
@@ -41,6 +45,7 @@
   },
   {
     "giornata": 2,
+    "fase": "regolare",
     "squadraCasa": "Marlboro Goal",
     "squadraOspite": "Real MyDrip",
     "golCasa": null,
@@ -51,6 +56,7 @@
   },
   {
     "giornata": 2,
+    "fase": "regolare",
     "squadraCasa": "Wild Boys",
     "squadraOspite": "I Trogloditi",
     "golCasa": null,
@@ -61,6 +67,7 @@
   },
   {
     "giornata": 3,
+    "fase": "regolare",
     "squadraCasa": "I Trogloditi",
     "squadraOspite": "Imperial Seven",
     "golCasa": null,
@@ -71,6 +78,7 @@
   },
   {
     "giornata": 3,
+    "fase": "regolare",
     "squadraCasa": "Wild Boys",
     "squadraOspite": "Real MyDrip",
     "golCasa": null,
@@ -81,6 +89,7 @@
   },
   {
     "giornata": 3,
+    "fase": "regolare",
     "squadraCasa": "Sangu FC",
     "squadraOspite": "Marlboro Goal",
     "golCasa": null,
@@ -91,6 +100,7 @@
   },
   {
     "giornata": 4,
+    "fase": "regolare",
     "squadraCasa": "Imperial Seven",
     "squadraOspite": "Marlboro Goal",
     "golCasa": null,
@@ -101,6 +111,7 @@
   },
   {
     "giornata": 4,
+    "fase": "regolare",
     "squadraCasa": "Sangu FC",
     "squadraOspite": "Wild Boys",
     "golCasa": null,
@@ -111,6 +122,7 @@
   },
   {
     "giornata": 4,
+    "fase": "regolare",
     "squadraCasa": "I Trogloditi",
     "squadraOspite": "Real MyDrip",
     "golCasa": null,
@@ -121,6 +133,7 @@
   },
   {
     "giornata": 5,
+    "fase": "regolare",
     "squadraCasa": "Imperial Seven",
     "squadraOspite": "Real MyDrip",
     "golCasa": null,
@@ -131,6 +144,7 @@
   },
   {
     "giornata": 5,
+    "fase": "regolare",
     "squadraCasa": "Sangu FC",
     "squadraOspite": "I Trogloditi",
     "golCasa": null,
@@ -141,6 +155,7 @@
   },
   {
     "giornata": 5,
+    "fase": "regolare",
     "squadraCasa": "Marlboro Goal",
     "squadraOspite": "Wild Boys",
     "golCasa": null,
@@ -148,5 +163,38 @@
     "status": "da giocare",
     "vincitoreShootout": null,
     "data": "14/07", "ora": "21:20"
+  },
+  {
+    "giornata": 6, 
+    "fase": "playoff",
+    "descrizione": "Semifinale 1 (1ª vs 4ª)",
+    "squadraCasa": "Da definire",
+    "squadraOspite": "Da definire",
+    "golCasa": null,
+    "golOspite": null,
+    "status": "da giocare",
+    "data": "ancora", "ora": "da definire"
+  },
+  {
+    "giornata": 6, 
+    "fase": "playoff",
+    "descrizione": "Semifinale 2 (2ª vs 3ª)",
+    "squadraCasa": "Da definire",
+    "squadraOspite": "Da definire",
+    "golCasa": null,
+    "golOspite": null,
+    "status": "da giocare",
+    "data": "ancora", "ora": "da definire"
+  },
+  {
+    "giornata": 7, 
+    "fase": "playoff",
+    "descrizione": "Finale",
+    "squadraCasa": "Da definire",
+    "squadraOspite": "Da definire",
+    "golCasa": null,
+    "golOspite": null,
+    "status": "da giocare",
+    "data": "ancora", "ora": "da definire"
   }
 ]
