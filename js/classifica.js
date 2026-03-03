@@ -21,6 +21,9 @@ async function caricaClassificaAutomatica() {
         });
 
         partite.forEach(partita => {
+
+    if (partita.fase === "playoff") return;
+            
     if (partita.status === 'giocata') {
         const casa = partita.squadraCasa;
         const ospite = partita.squadraOspite;
