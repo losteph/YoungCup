@@ -74,6 +74,7 @@ async function caricaPartite() {
                         <div class="match-risultato">
                             ${risultato}
                             ${infoExtraShootout}
+                            ${descPlayoff}
                         </div>
                         
                         <div class="match-team team-ospite">
