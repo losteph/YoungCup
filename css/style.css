@@ -393,6 +393,25 @@ table tbody td:nth-child(3) {
 }
 
 
+
+
+.playoff-label {
+    font-size: 0.7em;
+    font-weight: bold;
+    color: #d4af37; /* Colore oro per i playoff */
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+/* Opzionale: un bordo dorato per la card della partita playoff */
+.match[data-fase="playoff"] {
+    border: 1px solid #d4af37;
+    background-color: #fffdf0;
+}
+
+
+
+
 /* --- INIZIO STILI RESPONSIVE PER MOBILE --- */
 
 @media (max-width: 600px) {
