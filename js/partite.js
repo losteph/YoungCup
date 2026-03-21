@@ -60,7 +60,7 @@ async function caricaPartite() {
             
             let dateTimeHtml = (partita.data && partita.ora) ? `
                 <div class="match-datetime">
-                    <span>${partita.data}</span>
+                    ${locationHtml}  <span>${partita.data}</span>
                     <span>${partita.ora}</span>
                 </div>
             ` : '';
