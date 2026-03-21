@@ -55,6 +55,9 @@ async function caricaPartite() {
                 `;
             }
 
+
+            let locationHtml = partita.campo ? `<span class="match-campo">📍 ${partita.campo}</span>` : '';
+            
             let dateTimeHtml = (partita.data && partita.ora) ? `
                 <div class="match-datetime">
                     <span>${partita.data}</span>
