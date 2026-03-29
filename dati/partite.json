@@ -8,7 +8,7 @@
   "golOspite": null,
   "status": "da giocare",
   "vincitoreShootout": null, 
-  "data": "31/03", "ora": "20:00", "campo": "Green Park"
+  "data": "09/04", "ora": "20:00", "campo": "Green Park"
   },
   {
     "giornata": 1,
@@ -19,7 +19,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null, 
-    "data": "31/03", "ora": "20:40", "campo": "Green Park"
+    "data": "09/04", "ora": "20:40", "campo": "Green Park"
   },
   {
     "giornata": 1,
@@ -30,7 +30,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "31/03", "ora": "21:20", "campo": "Green Park"
+    "data": "09/04", "ora": "21:20", "campo": "Green Park"
   },
   {
     "giornata": 2,
@@ -41,7 +41,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "09/04", "ora": "20:00", "campo": "Cofit Club"
+    "data": "28/04", "ora": "20:00", "campo": "Green Park"
   },
   {
     "giornata": 2,
@@ -52,7 +52,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "09/04", "ora": "20:40", "campo": "Cofit Club"
+    "data": "28/04", "ora": "20:40", "campo": "Green Park"
   },
   {
     "giornata": 2,
@@ -63,7 +63,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "09/04", "ora": "21:20", "campo": "Cofit Club"
+    "data": "28/04", "ora": "21:20", "campo": "Green Park"
   },
   {
     "giornata": 3,
@@ -74,7 +74,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "28/04", "ora": "20:00", "campo": "Green Park"
+    "data": "05/05", "ora": "20:00", "campo": "Green Park"
   },
   {
     "giornata": 3,
@@ -85,7 +85,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "28/04", "ora": "20:40", "campo": "Green Park"
+    "data": "05/05", "ora": "20:40", "campo": "Green Park"
   },
   {
     "giornata": 3,
@@ -96,7 +96,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "28/04", "ora": "21:20", "campo": "Green Park"
+    "data": "05/05", "ora": "21:20", "campo": "Green Park"
   },
   {
     "giornata": 4,
@@ -107,7 +107,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "05/05", "ora": "20:00", "campo": "Green Park"
+    "data": "21/05", "ora": "20:00", "campo": "Green Park"
   },
   {
     "giornata": 4,
@@ -118,7 +118,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "05/05", "ora": "20:40", "campo": "Green Park"
+    "data": "21/05", "ora": "20:40", "campo": "Green Park"
   },
   {
     "giornata": 4,
@@ -129,7 +129,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "05/05", "ora": "21:20", "campo": "Green Park"
+    "data": "21/05", "ora": "21:20", "campo": "Green Park"
   },
   {
     "giornata": 5,
@@ -140,7 +140,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "21/05", "ora": "20:00", "campo": "Green Park"
+    "data": "09/06", "ora": "20:00", "campo": "Green Park"
   },
   {
     "giornata": 5,
@@ -151,7 +151,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "21/05", "ora": "20:40", "campo": "Green Park"
+    "data": "09/06", "ora": "20:40", "campo": "Green Park"
   },
   {
     "giornata": 5,
@@ -162,7 +162,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "21/05", "ora": "21:20", "campo": "Green Park"
+    "data": "09/06", "ora": "21:20", "campo": "Green Park"
   },
   {
     "giornata": 6, 
@@ -173,7 +173,7 @@
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
-    "data": "09/06", "ora": "20:00", "campo": "Green Park"
+    "data": "??", "ora": "20:00", "campo": "Cofit Club"
   },
   {
     "giornata": 6, 
@@ -184,7 +184,7 @@
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
-    "data": "09/06", "ora": "20:40", "campo": "Green Park"
+    "data": "??", "ora": "20:40", "campo": "Cofit Club"
   },
   {
     "giornata": 6, 
@@ -195,6 +195,6 @@
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
-    "data": "09/06", "ora": "21:20", "campo": "Green Park"
+    "data": "??", "ora": "21:20", "campo": "Cofit Club"
   }
 ]
