@@ -63,28 +63,41 @@
 /* Numero Maglia: forma a maglietta in alto a destra */
 /* La maglietta col numero - VERSIONE BLINDATA */
 /* Il contenitore del numero (RETTANGOLO PULITO) */
+/* IL RETTANGOLO INDISTRUTTIBILE */
 .card-number-jersey {
+    /* 1. POSIZIONAMENTO FORZATO */
     position: absolute !important;
     top: 10px !important;
     right: 10px !important;
+    left: auto !important;   /* FONDAMENTALE: impedisce l'allungamento a sinistra */
+    bottom: auto !important;
     
-    /* Dimensioni fisse: impedisce la "striscia" */
-    width: 45px !important;
-    height: 45px !important;
+    /* 2. DIMENSIONI BLOCCATE */
+    width: 50px !important;
+    height: 50px !important;
+    min-width: 50px !important;
     
+    /* 3. CONTENUTO AL CENTRO */
     display: flex !important;
-    justify-content: center;
-    align-items: center;
+    justify-content: center !important;
+    align-items: center !important;
     
-    font-weight: bold;
-    font-size: 1.3rem;
-    font-family: 'Arial', sans-serif;
-    z-index: 10;
+    /* 4. ESTETICA */
+    z-index: 99 !important;
+    font-weight: 900 !important;
+    font-size: 1.4rem !important;
+    border: 2px solid #fff !important;
+    border-radius: 5px !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5) !important;
+}
 
-    /* Estetica: bordo e ombra */
-    border: 2px solid white;
-    border-radius: 5px; /* Angoli leggermente arrotondati */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+/* IL CONTENITORE PADRE */
+.card-frame {
+    position: relative !important; /* Senza questo, il numero vola fuori */
+    width: 100% !important;
+    aspect-ratio: 3/4 !important;
+    overflow: hidden !important;
+    display: block !important;
 }
 
 /* Assicuriamoci che il logo non venga schiacciato 
