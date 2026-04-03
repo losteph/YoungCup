@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+    <link rel="icon" type="image/jpeg" href="img/logo.jpeg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Squadre - CY-LEAGUE</title>
-    
-    <link rel="icon" type="image/jpeg" href="img/logo.jpeg">
-    
+    <title>Squadre Torneo</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cards.css"> </head>
 <body>
@@ -21,45 +19,36 @@
             <a href="index.html">Classifica</a>
             <a href="partite.html">Partite</a>
             <a href="marcatori.html">Marcatori</a>
-            <a href="squadre.html" class="active">Squadre</a>
+            <a href="squadre.html">Squadre</a>
             <a href="fantacalcio.html">Fantacalcio</a>
         </nav>
     </header>
 
     <main class="container">
-        <section>
-            <h2>Le Squadre</h2>
-            <p style="text-align: center; font-size: 0.9rem; color: #666; margin-bottom: 20px;">
-                💡 Clicca sui nomi per scoprire le figurine ufficiali dei giocatori!
-            </p>
-            
-            <div id="elenco-squadre">
-                <p>Caricamento squadre...</p>
-            </div>
-        </section>
+        <h2>Le Squadre</h2>
+        <div id="elenco-squadre">
+            <p>Caricamento squadre...</p>
+        </div>
     </main>
 
-    <div id="player-modal" onclick="this.style.display='none'">
-        
-        <div class="panini-card" onclick="event.stopPropagation()">
+    <div id="player-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:10000; justify-content:center; align-items:center;" onclick="this.style.display='none'">
+        <div class="panini-card" style="width:300px; background:white; padding:15px; border-radius:5px; position:relative;" onclick="event.stopPropagation()">
             
-            <div class="card-frame">
-                <img id="modal-logo" src="" alt="Logo Squadra">
+            <div class="card-frame" style="position:relative; border:2px solid #333; aspect-ratio:3/4; overflow:hidden; background:#eee;">
+                <img id="modal-logo" src="" style="position:absolute; top:10px; left:10px; width:45px; height:45px; z-index:5; object-fit:contain;">
                 <div id="modal-number" class="card-number-jersey"></div>
-                <img id="modal-img" src="" alt="Foto Giocatore">
+                <img id="modal-img" src="" style="width:100%; height:100%; object-fit:cover;">
             </div>
 
-            <div class="card-footer">
-                <div id="modal-name"></div>
-                <div id="modal-nickname"></div>
-                <div id="modal-role"></div>
-                <div id="modal-team"></div>
+            <div style="text-align:center; margin-top:15px; background:#222; color:white; padding:10px;">
+                <div id="modal-name" style="font-size:1.1rem; font-weight:bold; text-transform:uppercase;"></div>
+                <div id="modal-nickname" style="font-size:0.8rem; color:#ffd700; font-style:italic;"></div>
+                <div id="modal-role" style="font-size:0.75rem; color:#fff; background:rgba(255,255,255,0.1); display:inline-block; padding:2px 8px; margin-top:5px; border-radius:10px;"></div>
+                <div id="modal-team" style="font-size:0.7rem; color:#ccc; margin-top:5px;"></div>
             </div>
-
         </div>
     </div>
 
     <script src="js/squadre.js"></script>
-
 </body>
 </html>
