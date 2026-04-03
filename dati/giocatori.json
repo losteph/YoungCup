@@ -1,9 +1,7 @@
 {
-  "id": "mrossi10",
-  "nomeCompleto": "Mario Rossi",
-  "nomeMaglia": "MARIO",
+  "nome": "Mario Rossi",
+  "soprannome": "Super Mario",
   "numero": 10,
   "squadra": "Red Panthers",
-  "foto": "assets/img/giocatori/mario_rossi.png",
-  "haCard": true
+  "foto": "assets/img/giocatori/mario_rossi.jpg"
 }
