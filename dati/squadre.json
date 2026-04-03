@@ -4,16 +4,16 @@
     "presidente": "Paolo Almiento",
     "logo": "img/wild-boys.png",
     "rosa": [
-      { "nome": "Pierluigi De Marco", "ruolo": "Portiere" },
-      { "nome": "Andrea Fundone", "ruolo": "Difensore" },
-      { "nome": "Michele Scoppio", "ruolo": "Difensore" },
-      { "nome": "Fabrizio Lorini", "ruolo": "Difensore" },
-      { "nome": "Luigi Vaira", "ruolo": "Difensore" },
-      { "nome": "Alessandro del Giudice", "ruolo": "Centrocampista" },
-      { "nome": "Lorenzo Milfa", "ruolo": "Centrocampista" },
-      { "nome": "Lorenzo Gentile", "ruolo": "Attaccante" },
-      { "nome": "Carlo Basile", "ruolo": "Attaccante" },
-      { "nome": "Domenico Jr. Centrone", "ruolo": "Jolly" }
+      { "nome": "Pierluigi De Marco", "ruolo": "POR" },
+      { "nome": "Andrea Fundone", "ruolo": "DIF" },
+      { "nome": "Michele Scoppio", "ruolo": "DIF" },
+      { "nome": "Fabrizio Lorini", "ruolo": "DIF" },
+      { "nome": "Luigi Vaira", "ruolo": "DIF" },
+      { "nome": "Alessandro del Giudice", "ruolo": "CC" },
+      { "nome": "Lorenzo Milfa", "ruolo": "CC" },
+      { "nome": "Lorenzo Gentile", "ruolo": "ATT" },
+      { "nome": "Carlo Basile", "ruolo": "ATT" },
+      { "nome": "Domenico Jr. Centrone", "ruolo": "JOLLY" }
     ]
   },
   {
@@ -22,16 +22,16 @@
     "vicepresidente": "Pierantonio Sasso",
     "logo": "img/Trogloditi.png",
     "rosa": [
-      { "nome": "Mattia Shehu", "ruolo": "Portiere" },
-      { "nome": "Luca Padovano", "ruolo": "Difensore" },
-      { "nome": "Stefano Vidali", "ruolo": "Difensore" },
-      { "nome": "Andrea Capuzzolo", "ruolo": "Difensore" },
-      { "nome": "Francesco Albanese", "ruolo": "Difensore" },
-      { "nome": "Gianluca Chiappinelli", "ruolo": "Centrocampista" },
-      { "nome": "Francesco Santamaria", "ruolo": "Centrocampista" },
-      { "nome": "Raffaele Guerra", "ruolo": "Attaccante" },
-      { "nome": "Mattia Mavelli", "ruolo": "Attaccante" },
-      { "nome": "Marco Amodio", "ruolo": "Jolly" }
+      { "nome": "Mattia Shehu", "ruolo": "POR" },
+      { "nome": "Luca Padovano", "ruolo": "DIF" },
+      { "nome": "Stefano Vidali", "ruolo": "DIF" },
+      { "nome": "Andrea Capuzzolo", "ruolo": "DIF" },
+      { "nome": "Francesco Albanese", "ruolo": "DIF" },
+      { "nome": "Gianluca Chiappinelli", "ruolo": "CC" },
+      { "nome": "Francesco Santamaria", "ruolo": "CC" },
+      { "nome": "Raffaele Guerra", "ruolo": "ATT" },
+      { "nome": "Mattia Mavelli", "ruolo": "ATT" },
+      { "nome": "Marco Amodio", "ruolo": "JOLLY" }
     ]
   },
   {
@@ -39,16 +39,16 @@
     "presidente": "Gabriele Lanza",
     "logo": "img/SanguFC.png",
     "rosa": [
-      { "nome": "Pasquale Iannelli", "ruolo": "Portiere" },
-      { "nome": "Matteo Daniele", "ruolo": "Difensore" },
-      { "nome": "Gabriele Pedacchio", "ruolo": "Difensore" },
-      { "nome": "Gerardo Valerio Teutonico", "ruolo": "Difensore" },
-      { "nome": "Giovanni Corso", "ruolo": "Difensore" },
-      { "nome": "Daniel Sandu", "ruolo": "Centrocampista" },
-      { "nome": "Mattia Ieva", "ruolo": "Centrocampista" },
-      { "nome": "Mattia Pandolfi", "ruolo": "Attaccante" },
-      { "nome": "Angelo Anatilopan", "ruolo": "Attaccante" },
-      { "nome": "Dylan Todisco", "ruolo": "Jolly" }
+      { "nome": "Pasquale Iannelli", "ruolo": "POR" },
+      { "nome": "Matteo Daniele", "ruolo": "DIF" },
+      { "nome": "Gabriele Pedacchio", "ruolo": "DIF" },
+      { "nome": "Gerardo Valerio Teutonico", "ruolo": "DIF" },
+      { "nome": "Giovanni Corso", "ruolo": "DIF" },
+      { "nome": "Daniel Sandu", "ruolo": "CC" },
+      { "nome": "Mattia Ieva", "ruolo": "CC" },
+      { "nome": "Mattia Pandolfi", "ruolo": "ATT" },
+      { "nome": "Angelo Anatilopan", "ruolo": "ATT" },
+      { "nome": "Dylan Todisco", "ruolo": "JOLLY" }
     ]
   },
   {
@@ -57,15 +57,15 @@
     "vicepresidente": "Luca Carrozzo",
     "logo": "img/MarlboroGoal.png",
     "rosa": [
-      { "nome": "Gabriele Maci", "ruolo": "Portiere" },
-      { "nome": "Gianluca Audiello", "ruolo": "Difensore" },
-      { "nome": "Cataldo Sapio", "ruolo": "Difensore" },
-      { "nome": "Giuseppe Pepe", "ruolo": "Difensore" },
-      { "nome": "Marco Montrano", "ruolo": "Centrocampista" },
-      { "nome": "Riccardo Roscica", "ruolo": "Centrocampista" },
-      { "nome": "Adriano Pio Darcangelo", "ruolo": "Attaccante" },
-      { "nome": "Cosimo D'Onghia", "ruolo": "Attaccante" },
-      { "nome": "Michele Ventola", "ruolo": "Jolly" }
+      { "nome": "Gabriele Maci", "ruolo": "POR" },
+      { "nome": "Gianluca Audiello", "ruolo": "DIF" },
+      { "nome": "Cataldo Sapio", "ruolo": "DIF" },
+      { "nome": "Giuseppe Pepe", "ruolo": "DIF" },
+      { "nome": "Marco Montrano", "ruolo": "CC" },
+      { "nome": "Riccardo Roscica", "ruolo": "CC" },
+      { "nome": "Adriano Pio Darcangelo", "ruolo": "ATT" },
+      { "nome": "Cosimo D'Onghia", "ruolo": "ATT" },
+      { "nome": "Michele Ventola", "ruolo": "JOLLY" }
     ]
   },
   {
@@ -74,15 +74,15 @@
     "vicepresidente": "Domenico Tiritiello",
     "logo": "img/Drip.png",
     "rosa": [
-      { "nome": "Vincenzo Russo", "ruolo": "Portiere" },
-      { "nome": "Stefano Di Lena", "ruolo": "Difensore" },
-      { "nome": "Marco Accetta", "ruolo": "Difensore" },
-      { "nome": "Mario Mezzina", "ruolo": "Difensore" },
-      { "nome": "Alessandro Solazzo", "ruolo": "Centrocampista" },
-      { "nome": "Giovanni Meuli", "ruolo": "Centrocampista" },
-      { "nome": "Manuel Flores", "ruolo": "Attaccante" },
-      { "nome": "Mauro Origlia", "ruolo": "Attaccante" },
-      { "nome": "Luigi Daniele Barbone", "ruolo": "Jolly" }
+      { "nome": "Vincenzo Russo", "ruolo": "POR" },
+      { "nome": "Stefano Di Lena", "ruolo": "DIF" },
+      { "nome": "Marco Accetta", "ruolo": "DIF" },
+      { "nome": "Mario Mezzina", "ruolo": "DIF" },
+      { "nome": "Alessandro Solazzo", "ruolo": "CC" },
+      { "nome": "Giovanni Meuli", "ruolo": "CC" },
+      { "nome": "Manuel Flores", "ruolo": "ATT" },
+      { "nome": "Mauro Origlia", "ruolo": "ATT" },
+      { "nome": "Luigi Daniele Barbone", "ruolo": "JOLLY" }
     ]
   },
   {
@@ -90,15 +90,15 @@
     "presidente": "Michele Calderoni",
     "logo": "img/ImperialSeven.png",
     "rosa": [
-      { "nome": "Alessandro Guerra", "ruolo": "Portiere" },
-      { "nome": "Fabiano Tafaro", "ruolo": "Difensore" },
-      { "nome": "Mario Rizzo", "ruolo": "Difensore" },
-      { "nome": "Gabriele Ferrandino", "ruolo": "Difensore" },
-      { "nome": "Antonio Iasiello", "ruolo": "Centrocampista" },
-      { "nome": "Matteo Sembenini", "ruolo": "Centrocampista" },
-      { "nome": "Flavio Carbone", "ruolo": "Attaccante" },
-      { "nome": "Antonio Fuzio", "ruolo": "Attaccante" },
-      { "nome": "JJ Zigrino", "ruolo": "Jolly" }
+      { "nome": "Alessandro Guerra", "ruolo": "POR" },
+      { "nome": "Fabiano Tafaro", "ruolo": "DIF" },
+      { "nome": "Mario Rizzo", "ruolo": "DIF" },
+      { "nome": "Gabriele Ferrandino", "ruolo": "DIF" },
+      { "nome": "Antonio Iasiello", "ruolo": "CC" },
+      { "nome": "Matteo Sembenini", "ruolo": "CC" },
+      { "nome": "Flavio Carbone", "ruolo": "ATT" },
+      { "nome": "Antonio Fuzio", "ruolo": "ATT" },
+      { "nome": "JJ Zigrino", "ruolo": "JOLLY" }
     ]
   }
 ]
