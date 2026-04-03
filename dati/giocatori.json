@@ -3,12 +3,21 @@
   "nome": "Stefano Di Lena",
   "soprannome": "STEPH",
   "numero": 7,
-  "foto": "assets/img/giocatori/rossi.jpg",
+  "ruolo": "DIF",
+  "foto": "assets/img/giocatori/rossi.jpg"
   },
   {
     "nome": "Marco Accetta",
-    "soprannome": "Accetta",
+    "soprannome": "ACCETTA",
     "numero": 45,
+    "ruolo": "DIF",
     "foto": "assets/img/giocatori/bianchi.jpg"
+  },
+  {
+  "nome": "Mauro Origlia",
+  "soprannome": "ORIGLIA",
+  "numero": 10,
+  "ruolo": "ATT",
+  "foto": "assets/img/giocatori/rossi.jpg"
   }
 ]
