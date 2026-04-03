@@ -61,27 +61,35 @@
 }
 
 /* Numero Maglia: forma a maglietta in alto a destra */
+/* La maglietta col numero - VERSIONE BLINDATA */
 .card-number-jersey {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    width: 60px;
-    height: 60px;
-    z-index: 5;
-    display: flex;
+    position: absolute !important;
+    top: 5px !important;
+    right: 5px !important;
+    width: 60px !important;  /* Forza la larghezza */
+    height: 60px !important; /* Forza l'altezza */
+    z-index: 10 !important;  /* La mette sopra a tutto */
+    
+    display: flex !important;
     justify-content: center;
     align-items: center;
+    
     font-weight: 900;
     font-size: 1.4rem;
     font-family: 'Arial Black', sans-serif;
     
-    /* Forma a maglietta stilizzata */
+    /* Questo crea la forma della maglietta */
     clip-path: polygon(25% 0%, 75% 0%, 100% 20%, 85% 35%, 85% 100%, 15% 100%, 15% 35%, 0% 20%);
     
-    /* Effetto profondità interno */
-    box-shadow: inset 0 -4px 4px rgba(0, 0, 0, 0.2);
+    /* Ombra interna per dare l'idea del tessuto */
+    box-shadow: inset 0 -4px 6px rgba(0,0,0,0.3);
 }
 
+/* Assicurati che il contenitore della foto non la schiacci */
+.card-frame {
+    position: relative !important;
+    overflow: hidden !important;
+}
 /* ==========================================
    4. INFORMAZIONI IN BASSO (FOOTER)
    ========================================== */
