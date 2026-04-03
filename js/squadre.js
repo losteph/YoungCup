@@ -19,22 +19,31 @@ async function caricaTutto() {
         squadre.forEach(s => {
             // Creiamo la rosa dei giocatori
             let giocatoriHtml = '<ul>' + s.rosa.map(g => {
-                
-                // Cerchiamo la figurina in giocatori.json
-                const infoExtra = listaGiocatoriInfo.find(p => p.nome === g.nome);
-                
+                // 1. Cerchiamo il giocatore nel file figurine
+                const infoExtra = listaGiocatoriInfo.find(p => p.nome.trim() === g.nome.trim());
+    
                 if (infoExtra) {
-                    // Passiamo anche g.ruolo alla funzione
-                    return `<li>
-                        <span class="player-link" style="cursor:pointer;" onclick="apriFigurina('${infoExtra.nome}', '${infoExtra.numero}', '${infoExtra.foto}', '${s.logo}', '${s.nome}', '${infoExtra.soprannome}', '${g.ruolo}')">
-                            ${g.nome}
-                        </span> 
-                        <em>(${g.ruolo})</em>
-                    </li>`;
-                } else {
-                    return `<li>${g.nome} <em>(${g.ruolo})</em></li>`;
-                }
-            }).join('') + '</ul>';
+                // --- TRUCCO ANTI-APOSTROFO ---
+                // Questa funzione mette una \ davanti all'apostrofo così il JS non crasha
+                    const pulisci = (testo) => (testo || "").toString().replace(/'/g, "\\'");
+
+                    const n = pulisci(infoExtra.nome);
+                    const sN = pulisci(infoExtra.soprannome);
+                    const r = pulisci(g.ruolo);
+                    const t = pulisci(s.nome);
+                    const f = infoExtra.foto || ""; // La foto non ha apostrofi solitamente
+                    const num = infoExtra.numero || "";
+
+                return `<li>
+                    <span class="player-link" onclick="apriFigurina('${n}', '${num}', '${f}', '${s.logo}', '${t}', '${sN}', '${r}')">
+                        ${g.nome}
+                    </span> 
+                    <em>(${g.ruolo})</em>
+                </li>`;
+            } else {
+                return `<li>${g.nome} <em>(${g.ruolo})</em></li>`;
+              }
+        }).join('') + '</ul>';
 
             // Logica Dirigenza
             let dirigenzaHtml = "";
