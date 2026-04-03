@@ -62,34 +62,43 @@
 
 /* Numero Maglia: forma a maglietta in alto a destra */
 /* La maglietta col numero - VERSIONE BLINDATA */
+/* Il contenitore del numero (RETTANGOLO PULITO) */
 .card-number-jersey {
     position: absolute !important;
-    top: 5px !important;
-    right: 5px !important;
-    width: 60px !important;  /* Forza la larghezza */
-    height: 60px !important; /* Forza l'altezza */
-    z-index: 10 !important;  /* La mette sopra a tutto */
+    top: 10px !important;
+    right: 10px !important;
+    
+    /* Dimensioni fisse: impedisce la "striscia" */
+    width: 45px !important;
+    height: 45px !important;
     
     display: flex !important;
     justify-content: center;
     align-items: center;
     
-    font-weight: 900;
-    font-size: 1.4rem;
-    font-family: 'Arial Black', sans-serif;
-    
-    /* Questo crea la forma della maglietta */
-    clip-path: polygon(25% 0%, 75% 0%, 100% 20%, 85% 35%, 85% 100%, 15% 100%, 15% 35%, 0% 20%);
-    
-    /* Ombra interna per dare l'idea del tessuto */
-    box-shadow: inset 0 -4px 6px rgba(0,0,0,0.3);
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: 'Arial', sans-serif;
+    z-index: 10;
+
+    /* Estetica: bordo e ombra */
+    border: 2px solid white;
+    border-radius: 5px; /* Angoli leggermente arrotondati */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
-/* Assicurati che il contenitore della foto non la schiacci */
-.card-frame {
-    position: relative !important;
-    overflow: hidden !important;
+/* Assicuriamoci che il logo non venga schiacciato 
+#modal-logo {
+    position: absolute !important;
+    top: 10px !important;
+    left: 10px !important;
+    width: 45px !important;
+    height: 45px !important;
+    z-index: 10;
+    object-fit: contain;
 }
+*/
+
 /* ==========================================
    4. INFORMAZIONI IN BASSO (FOOTER)
    ========================================== */
