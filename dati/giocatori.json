@@ -3,15 +3,12 @@
   "nome": "Stefano Di Lena",
   "soprannome": "STEPH",
   "numero": 7,
-  "squadra": "Real MyDrip",
   "foto": "assets/img/giocatori/rossi.jpg",
-  "logo": "assets/img/loghi/red_panthers.png"
   },
   {
     "nome": "Marco Accetta",
     "soprannome": "Accetta",
     "numero": 45,
-    "squadra": "Real MyDrip",
     "foto": "assets/img/giocatori/bianchi.jpg"
   }
 ]
