@@ -1,8 +1,16 @@
-{
+[
+  {
   "nome": "Mario Rossi",
   "soprannome": "Super Mario",
   "numero": 10,
   "squadra": "Red Panthers",
   "foto": "assets/img/giocatori/rossi.jpg",
   "logo": "assets/img/loghi/red_panthers.png"
-}
+  },
+  {
+    "nome": "Luca Bianchi",
+    "soprannome": "Il Muro",
+    "numero": 1,
+    "foto": "assets/img/giocatori/bianchi.jpg"
+  }
+]
