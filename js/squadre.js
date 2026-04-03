@@ -62,21 +62,42 @@ async function caricaTutto() {
 
 // Funzione che riempie e mostra il Pop-up della Figurina
 function apriFigurina(nome, numero, foto, logoSquadra, nomeSquadra, soprannome) {
-    const fotoFinale = (foto && foto !== "") ? foto : "assets/img/default.png";
+    const modal = document.getElementById('player-modal');
+    const imgCont = document.getElementById('modal-img');
+    const numCont = document.getElementById('modal-number');
     
-    document.getElementById('modal-img').src = fotoFinale;
+    // 1. Gestione Foto
+    imgCont.src = (foto && foto !== "") ? foto : "assets/img/default.png";
+    
+    // 2. MAPPATURA COLORI (MAGLIA E NUMERO)
+    const coloriSquadre = {
+        "Real MyDrip":      { fondo: "#ccff00", testo: "#000000" }, // Giallo Fluo / Nero
+        "I Trogloditi":       { fondo: "#40e0d0", testo: "#ffffff" }, // Turchese / Bianco
+        "Sangu FC":            { fondo: "#000000", testo: "#ff0000" }, // Nero / Rosso
+        "Marlboro Goal":         { fondo: "#ff0000", testo: "#000000" }, // Rosso / Nero
+        "Wild Boys":        { fondo: "#ffffff", testo: "#d4af37" }, // Bianco / Oro
+        "Imperial Seven":   { fondo: "#008000", testo: "#000000" }  // Verde / Nero
+    };
+
+    // Applichiamo i colori alla maglietta del numero
+    const colori = coloriSquadre[nomeSquadra] || { fondo: "#333", testo: "#fff" }; // Default se non trova la squadra
+    numCont.style.backgroundColor = colori.fondo;
+    numCont.style.color = colori.testo;
+    numCont.innerText = numero || "-";
+
+    // 3. Altri Dati
     document.getElementById('modal-name').innerText = nome;
-    document.getElementById('modal-number').innerText = numero || "-";
     document.getElementById('modal-logo').src = logoSquadra;
     document.getElementById('modal-team').innerText = nomeSquadra;
 
-    const nickElement = document.getElementById('modal-nickname');
+    // 4. Soprannome
+    const nick = document.getElementById('modal-nickname');
     if (soprannome && soprannome !== "undefined" && soprannome !== "") {
-        nickElement.innerText = `"${soprannome}"`;
-        nickElement.style.display = "block";
+        nick.innerText = `"${soprannome}"`;
+        nick.style.display = "block";
     } else {
-        nickElement.style.display = "none";
+        nick.style.display = "none";
     }
 
-    document.getElementById('player-modal').style.display = 'flex';
+    modal.style.display = 'flex';
 }
