@@ -37,6 +37,9 @@ async function caricaClassificaAutomatica() {
         classifica[ospite].gf += golOspite;
         classifica[ospite].gs += golCasa;
 
+        classifica[casa].dr = classifica[casa].gf - classifica[casa].gs;
+        classifica[ospite].dr = classifica[ospite].gf - classifica[ospite].gs;
+
         if (golCasa > golOspite) {
             // Vittoria netta
             classifica[casa].vittorie++;
