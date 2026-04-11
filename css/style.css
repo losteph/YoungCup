@@ -473,13 +473,31 @@ table tbody td:nth-child(3) {
     }
     .match-info {
         grid-template-columns: 1fr; /* Una sola colonna */
+        gap: 10px;
     }
     .match-squadra {
         text-align: center !important; /* Centra le squadre (l'!important serve per sovrascrivere lo stile inline) */
     }
-    .match-risultato {
-        margin: 10px 0; /* Aggiungi spazio verticale */
+
+    .match-team {
+        justify-content: center !important;
+        text-align: center !important;
+        flex-direction: row !important; /* Logo a sinistra, nome a destra per tutti */
     }
+    
+    .team-casa, .team-ospite {
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    .match-risultato {
+        font-size: 1.5em; /* Un po' più grande per risaltare */
+        margin: 5px 0;
+        background: #f0f4f8; /* Un leggero sfondo per separare i nomi */
+        padding: 5px;
+        border-radius: 4px;
+    }
+    
     .match-datetime {
         /* Resetta il blocco data/ora */
         width: 100%;
