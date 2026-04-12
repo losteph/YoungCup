@@ -11,7 +11,7 @@ async function caricaMarcatori() {
         const marcatori = await marcatoriRes.json();
         const squadreData = await squadreRes.json();
 
-        marcatori.sort((a, b) => b.gol - a.gol);
+        marcatori.sort((a, b) => b.gol - a.gol || b.assist - a.assist);
 
         const tbody = document.getElementById('corpo-marcatori');
         tbody.innerHTML = '';
