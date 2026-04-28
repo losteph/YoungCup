@@ -9,45 +9,45 @@
     
 <style>
     /* Container principale */
-    .fanta-container { 
-        max-width: 1000px; margin: 20px auto; background: #fff; 
-        border-radius: 12px; box-shadow: 0 4px 25px rgba(0,0,0,0.1); 
-        overflow: hidden; font-family: 'Segoe UI', system-ui, sans-serif; 
+    .fanta-container {
+        max-width: 1000px; margin: 20px auto; background: #fff;
+        border-radius: 12px; box-shadow: 0 4px 25px rgba(0,0,0,0.1);
+        overflow: hidden; font-family: 'Segoe UI', system-ui, sans-serif;
     }
 
     /* IL BINARIO PER LO SCORRIMENTO */
     .fanta-scroll-wrapper {
         width: 100%;
-        overflow-x: auto; 
+        overflow-x: auto;
         -webkit-overflow-scrolling: touch;
     }
 
     .fanta-title { text-align: center; padding: 25px; color: #1a1a1a; background: #fdfdfd; border-bottom: 2px solid #f0f0f0; text-transform: uppercase; letter-spacing: 1px; margin: 0; }
-    
+
     /* Forza la larghezza per non far schiacciare i dati */
     ol.fanta-list { list-style: none; padding: 0; margin: 0; min-width: 700px; }
     .fanta-item { display: flex; align-items: center; padding: 15px 30px; border-bottom: 1px solid #f0f0f0; transition: 0.2s; }
     .fanta-item:hover { background: #f9f9f9; }
-    
+
     .pos { font-weight: 800; font-size: 1.5em; min-width: 60px; text-align: center; color: #333; }
     .info { flex-grow: 1; padding-left: 10px; }
     .nick { font-weight: 800; color: #000; font-size: 1.3em; line-height: 1.1; }
     .coach { font-size: 0.9em; color: #666; font-weight: 400; margin-top: 2px; display: block; }
-    
+
     .badge-giornata { display: inline-block; background: #ececec; color: #444; font-size: 0.75em; padding: 4px 10px; border-radius: 6px; font-weight: 700; margin-top: 8px; white-space: nowrap; }
-    
+
     .scores-container { display: flex; gap: 20px; align-items: center; text-align: center; margin-left: 20px; }
     .score-box { min-width: 100px; }
-    
+
     .pts-f1-total { font-weight: 900; font-size: 1.8em; color: #e63946; display: block; line-height: 1; }
     .label-f1 { font-size: 0.65em; color: #999; text-transform: uppercase; font-weight: 700; }
-    
+
     .pts-real-total { font-weight: 900; font-size: 1.8em; color: #007bff; display: block; line-height: 1; }
     .label-real { font-size: 0.65em; color: #999; text-transform: uppercase; font-weight: 700; }
 
     .fanta-legend { background: #fdfdfd; padding: 30px; border-top: 4px solid #f0f0f0; min-width: 700px; }
     .legend-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.85em; color: #555; }
-    
+
     /* Estetica del cursore (barra di scorrimento) */
     .fanta-scroll-wrapper::-webkit-scrollbar { height: 8px; }
     .fanta-scroll-wrapper::-webkit-scrollbar-track { background: #f1f1f1; }
@@ -74,17 +74,59 @@
     <main>
         <div class="fanta-container">
             <h2 class="fanta-title">⚽ Classifica Generale</h2>
-            
+
             <div class="fanta-scroll-wrapper">
                 <ol class="fanta-list">
                     
             <li class="fanta-item">
                 <span class="pos">🥇</span>
                 <div class="info">
+                    <span class="nick">Dodinho Jr</span>
+                    <span class="coach">Domenico Centrone</span>
+                    <div class="badge-giornata">
+                        G2: 62.0 pt &nbsp;|&nbsp; 85.0 F1
+                    </div>
+                </div>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <span class="pts-f1-total">150.0</span>
+                        <span class="label-f1">Punti F1</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="pts-real-total">118.0</span>
+                        <span class="label-real">Punti Reali</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="fanta-item">
+                <span class="pos">🥈</span>
+                <div class="info">
+                    <span class="nick">fossantani</span>
+                    <span class="coach">Giulia Carbotti </span>
+                    <div class="badge-giornata">
+                        G2: 63.0 pt &nbsp;|&nbsp; 100.0 F1
+                    </div>
+                </div>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <span class="pts-f1-total">100.0</span>
+                        <span class="label-f1">Punti F1</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="pts-real-total">63.0</span>
+                        <span class="label-real">Punti Reali</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="fanta-item">
+                <span class="pos">🥉</span>
+                <div class="info">
                     <span class="nick">Toto mafioso</span>
                     <span class="coach">Daniele Galasso</span>
                     <div class="badge-giornata">
-                        G1: 60.5 pt &nbsp;|&nbsp; 100.0 F1
+                        G2: nan pt &nbsp;|&nbsp; nan F1
                     </div>
                 </div>
                 <div class="scores-container">
@@ -100,17 +142,227 @@
             </li>
         
             <li class="fanta-item">
-                <span class="pos">🥈</span>
+                <span class="pos">4.</span>
                 <div class="info">
-                    <span class="nick">FRITTO MISTO FC</span>
-                    <span class="coach">Flavio  Carbone </span>
+                    <span class="nick">FRITTO MISTO Fc</span>
+                    <span class="coach">Flavio  Carbone</span>
                     <div class="badge-giornata">
-                        G1: 58.0 pt &nbsp;|&nbsp; 85.0 F1
+                        G2: 43.0 pt &nbsp;|&nbsp; 1.0 F1
                     </div>
                 </div>
                 <div class="scores-container">
                     <div class="score-box">
-                        <span class="pts-f1-total">85.0</span>
+                        <span class="pts-f1-total">86.0</span>
+                        <span class="label-f1">Punti F1</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="pts-real-total">101.0</span>
+                        <span class="label-real">Punti Reali</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="fanta-item">
+                <span class="pos">5.</span>
+                <div class="info">
+                    <span class="nick">Marlboro goal club </span>
+                    <span class="coach">Cosimo D’Onghia</span>
+                    <div class="badge-giornata">
+                        G2: 60.0 pt &nbsp;|&nbsp; 75.0 F1
+                    </div>
+                </div>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <span class="pts-f1-total">76.0</span>
+                        <span class="label-f1">Punti F1</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="pts-real-total">107.0</span>
+                        <span class="label-real">Punti Reali</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="fanta-item">
+                <span class="pos">6.</span>
+                <div class="info">
+                    <span class="nick">Beverly INPS</span>
+                    <span class="coach">JJ Zigrino</span>
+                    <div class="badge-giornata">
+                        G2: 37.5 pt &nbsp;|&nbsp; 1.0 F1
+                    </div>
+                </div>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <span class="pts-f1-total">76.0</span>
+                        <span class="label-f1">Punti F1</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="pts-real-total">94.5</span>
+                        <span class="label-real">Punti Reali</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="fanta-item">
+                <span class="pos">7.</span>
+                <div class="info">
+                    <span class="nick">Team Asturbo</span>
+                    <span class="coach">Matteo Sembenini</span>
+                    <div class="badge-giornata">
+                        G2: 59.0 pt &nbsp;|&nbsp; 55.0 F1
+                    </div>
+                </div>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <span class="pts-f1-total">69.0</span>
+                        <span class="label-f1">Punti F1</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="pts-real-total">108.5</span>
+                        <span class="label-real">Punti Reali</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="fanta-item">
+                <span class="pos">8.</span>
+                <div class="info">
+                    <span class="nick">Giulia</span>
+                    <span class="coach">Giulia  Amodio</span>
+                    <div class="badge-giornata">
+                        G2: 52.0 pt &nbsp;|&nbsp; 9.0 F1
+                    </div>
+                </div>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <span class="pts-f1-total">64.0</span>
+                        <span class="label-f1">Punti F1</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="pts-real-total">106.5</span>
+                        <span class="label-real">Punti Reali</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="fanta-item">
+                <span class="pos">9.</span>
+                <div class="info">
+                    <span class="nick">wagliunastr </span>
+                    <span class="coach">Marco Montrano</span>
+                    <div class="badge-giornata">
+                        G2: 59.0 pt &nbsp;|&nbsp; 55.0 F1
+                    </div>
+                </div>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <span class="pts-f1-total">62.5</span>
+                        <span class="label-f1">Punti F1</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="pts-real-total">108.0</span>
+                        <span class="label-real">Punti Reali</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="fanta-item">
+                <span class="pos">10.</span>
+                <div class="info">
+                    <span class="nick">#outpetacchio</span>
+                    <span class="coach">Gabriele  Lanza </span>
+                    <div class="badge-giornata">
+                        G2: 59.0 pt &nbsp;|&nbsp; 55.0 F1
+                    </div>
+                </div>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <span class="pts-f1-total">56.0</span>
+                        <span class="label-f1">Punti F1</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="pts-real-total">95.0</span>
+                        <span class="label-real">Punti Reali</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="fanta-item">
+                <span class="pos">11.</span>
+                <div class="info">
+                    <span class="nick">AC PICCHIA</span>
+                    <span class="coach">Stefano Di Lena</span>
+                    <div class="badge-giornata">
+                        G2: 50.5 pt &nbsp;|&nbsp; 6.0 F1
+                    </div>
+                </div>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <span class="pts-f1-total">48.5</span>
+                        <span class="label-f1">Punti F1</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="pts-real-total">104.0</span>
+                        <span class="label-real">Punti Reali</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="fanta-item">
+                <span class="pos">12.</span>
+                <div class="info">
+                    <span class="nick">rccard</span>
+                    <span class="coach">Riccardo Santovito</span>
+                    <div class="badge-giornata">
+                        G2: 49.5 pt &nbsp;|&nbsp; 3.0 F1
+                    </div>
+                </div>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <span class="pts-f1-total">45.5</span>
+                        <span class="label-f1">Punti F1</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="pts-real-total">103.0</span>
+                        <span class="label-real">Punti Reali</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="fanta-item">
+                <span class="pos">13.</span>
+                <div class="info">
+                    <span class="nick">Jack Daniel’s </span>
+                    <span class="coach">Matteo  Daniele</span>
+                    <div class="badge-giornata">
+                        G2: 56.5 pt &nbsp;|&nbsp; 30.0 F1
+                    </div>
+                </div>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <span class="pts-f1-total">44.0</span>
+                        <span class="label-f1">Punti F1</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="pts-real-total">106.0</span>
+                        <span class="label-real">Punti Reali</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="fanta-item">
+                <span class="pos">14.</span>
+                <div class="info">
+                    <span class="nick">Marlboro Goal Cup</span>
+                    <span class="coach">Gianluca Audiello</span>
+                    <div class="badge-giornata">
+                        G2: 58.0 pt &nbsp;|&nbsp; 40.0 F1
+                    </div>
+                </div>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <span class="pts-f1-total">40.0</span>
                         <span class="label-f1">Punti F1</span>
                     </div>
                     <div class="score-box">
@@ -121,117 +373,54 @@
             </li>
         
             <li class="fanta-item">
-                <span class="pos">🥉</span>
+                <span class="pos">15.</span>
                 <div class="info">
-                    <span class="nick">Beverly INPS</span>
-                    <span class="coach">JJ Zigrino</span>
+                    <span class="nick">TINAAAA</span>
+                    <span class="coach">Martina Tamborrino</span>
                     <div class="badge-giornata">
-                        G1: 57.0 pt &nbsp;|&nbsp; 75.0 F1
+                        G2: 51.0 pt &nbsp;|&nbsp; 8.0 F1
                     </div>
                 </div>
                 <div class="scores-container">
                     <div class="score-box">
-                        <span class="pts-f1-total">75.0</span>
+                        <span class="pts-f1-total">38.0</span>
                         <span class="label-f1">Punti F1</span>
                     </div>
                     <div class="score-box">
-                        <span class="pts-real-total">57.0</span>
+                        <span class="pts-real-total">103.0</span>
                         <span class="label-real">Punti Reali</span>
                     </div>
                 </div>
             </li>
         
             <li class="fanta-item">
-                <span class="pos">4.</span>
+                <span class="pos">16.</span>
                 <div class="info">
-                    <span class="nick">LOCOJR</span>
-                    <span class="coach">Domenico Centrone</span>
+                    <span class="nick">Fcettanera</span>
+                    <span class="coach">Luca Padovano</span>
                     <div class="badge-giornata">
-                        G1: 56.0 pt &nbsp;|&nbsp; 65.0 F1
+                        G2: 57.5 pt &nbsp;|&nbsp; 35.0 F1
                     </div>
                 </div>
                 <div class="scores-container">
                     <div class="score-box">
-                        <span class="pts-f1-total">65.0</span>
+                        <span class="pts-f1-total">35.0</span>
                         <span class="label-f1">Punti F1</span>
                     </div>
                     <div class="score-box">
-                        <span class="pts-real-total">56.0</span>
+                        <span class="pts-real-total">57.5</span>
                         <span class="label-real">Punti Reali</span>
                     </div>
                 </div>
             </li>
         
             <li class="fanta-item">
-                <span class="pos">5.</span>
-                <div class="info">
-                    <span class="nick">Giulia</span>
-                    <span class="coach">Giulia Amodio</span>
-                    <div class="badge-giornata">
-                        G1: 54.5 pt &nbsp;|&nbsp; 55.0 F1
-                    </div>
-                </div>
-                <div class="scores-container">
-                    <div class="score-box">
-                        <span class="pts-f1-total">55.0</span>
-                        <span class="label-f1">Punti F1</span>
-                    </div>
-                    <div class="score-box">
-                        <span class="pts-real-total">54.5</span>
-                        <span class="label-real">Punti Reali</span>
-                    </div>
-                </div>
-            </li>
-        
-            <li class="fanta-item">
-                <span class="pos">6.</span>
-                <div class="info">
-                    <span class="nick">ciò d coip</span>
-                    <span class="coach">Riccardo Santovito</span>
-                    <div class="badge-giornata">
-                        G1: 53.5 pt &nbsp;|&nbsp; 42.5 F1
-                    </div>
-                </div>
-                <div class="scores-container">
-                    <div class="score-box">
-                        <span class="pts-f1-total">42.5</span>
-                        <span class="label-f1">Punti F1</span>
-                    </div>
-                    <div class="score-box">
-                        <span class="pts-real-total">53.5</span>
-                        <span class="label-real">Punti Reali</span>
-                    </div>
-                </div>
-            </li>
-        
-            <li class="fanta-item">
-                <span class="pos">7.</span>
-                <div class="info">
-                    <span class="nick">AC PICCHIA</span>
-                    <span class="coach">Stefano Di Lena</span>
-                    <div class="badge-giornata">
-                        G1: 53.5 pt &nbsp;|&nbsp; 42.5 F1
-                    </div>
-                </div>
-                <div class="scores-container">
-                    <div class="score-box">
-                        <span class="pts-f1-total">42.5</span>
-                        <span class="label-f1">Punti F1</span>
-                    </div>
-                    <div class="score-box">
-                        <span class="pts-real-total">53.5</span>
-                        <span class="label-real">Punti Reali</span>
-                    </div>
-                </div>
-            </li>
-        
-            <li class="fanta-item">
-                <span class="pos">8.</span>
+                <span class="pos">17.</span>
                 <div class="info">
                     <span class="nick">fantasticix</span>
                     <span class="coach">Giada Sgobio</span>
                     <div class="badge-giornata">
-                        G1: 52.5 pt &nbsp;|&nbsp; 35.0 F1
+                        G2: nan pt &nbsp;|&nbsp; nan F1
                     </div>
                 </div>
                 <div class="scores-container">
@@ -247,210 +436,21 @@
             </li>
         
             <li class="fanta-item">
-                <span class="pos">9.</span>
-                <div class="info">
-                    <span class="nick">TinaVSjl</span>
-                    <span class="coach">Martina Tamborrino</span>
-                    <div class="badge-giornata">
-                        G1: 52.0 pt &nbsp;|&nbsp; 30.0 F1
-                    </div>
-                </div>
-                <div class="scores-container">
-                    <div class="score-box">
-                        <span class="pts-f1-total">30.0</span>
-                        <span class="label-f1">Punti F1</span>
-                    </div>
-                    <div class="score-box">
-                        <span class="pts-real-total">52.0</span>
-                        <span class="label-real">Punti Reali</span>
-                    </div>
-                </div>
-            </li>
-        
-            <li class="fanta-item">
-                <span class="pos">10.</span>
-                <div class="info">
-                    <span class="nick">idose </span>
-                    <span class="coach">Francesco  Conte </span>
-                    <div class="badge-giornata">
-                        G1: 50.0 pt &nbsp;|&nbsp; 21.0 F1
-                    </div>
-                </div>
-                <div class="scores-container">
-                    <div class="score-box">
-                        <span class="pts-f1-total">21.0</span>
-                        <span class="label-f1">Punti F1</span>
-                    </div>
-                    <div class="score-box">
-                        <span class="pts-real-total">50.0</span>
-                        <span class="label-real">Punti Reali</span>
-                    </div>
-                </div>
-            </li>
-        
-            <li class="fanta-item">
-                <span class="pos">11.</span>
-                <div class="info">
-                    <span class="nick">Chiavares</span>
-                    <span class="coach">Gianvito  Fella</span>
-                    <div class="badge-giornata">
-                        G1: 50.0 pt &nbsp;|&nbsp; 21.0 F1
-                    </div>
-                </div>
-                <div class="scores-container">
-                    <div class="score-box">
-                        <span class="pts-f1-total">21.0</span>
-                        <span class="label-f1">Punti F1</span>
-                    </div>
-                    <div class="score-box">
-                        <span class="pts-real-total">50.0</span>
-                        <span class="label-real">Punti Reali</span>
-                    </div>
-                </div>
-            </li>
-        
-            <li class="fanta-item">
-                <span class="pos">12.</span>
-                <div class="info">
-                    <span class="nick">Biboux</span>
-                    <span class="coach">Marilù Manzari</span>
-                    <div class="badge-giornata">
-                        G1: 50.0 pt &nbsp;|&nbsp; 21.0 F1
-                    </div>
-                </div>
-                <div class="scores-container">
-                    <div class="score-box">
-                        <span class="pts-f1-total">21.0</span>
-                        <span class="label-f1">Punti F1</span>
-                    </div>
-                    <div class="score-box">
-                        <span class="pts-real-total">50.0</span>
-                        <span class="label-real">Punti Reali</span>
-                    </div>
-                </div>
-            </li>
-        
-            <li class="fanta-item">
-                <span class="pos">13.</span>
-                <div class="info">
-                    <span class="nick">Inazuma seven</span>
-                    <span class="coach">Cataldo Sapio</span>
-                    <div class="badge-giornata">
-                        G1: 49.5 pt &nbsp;|&nbsp; 14.0 F1
-                    </div>
-                </div>
-                <div class="scores-container">
-                    <div class="score-box">
-                        <span class="pts-f1-total">14.0</span>
-                        <span class="label-f1">Punti F1</span>
-                    </div>
-                    <div class="score-box">
-                        <span class="pts-real-total">49.5</span>
-                        <span class="label-real">Punti Reali</span>
-                    </div>
-                </div>
-            </li>
-        
-            <li class="fanta-item">
-                <span class="pos">14.</span>
-                <div class="info">
-                    <span class="nick">Team Asturbo</span>
-                    <span class="coach">Matteo Sembenini</span>
-                    <div class="badge-giornata">
-                        G1: 49.5 pt &nbsp;|&nbsp; 14.0 F1
-                    </div>
-                </div>
-                <div class="scores-container">
-                    <div class="score-box">
-                        <span class="pts-f1-total">14.0</span>
-                        <span class="label-f1">Punti F1</span>
-                    </div>
-                    <div class="score-box">
-                        <span class="pts-real-total">49.5</span>
-                        <span class="label-real">Punti Reali</span>
-                    </div>
-                </div>
-            </li>
-        
-            <li class="fanta-item">
-                <span class="pos">15.</span>
-                <div class="info">
-                    <span class="nick">Jack Daniel’s</span>
-                    <span class="coach">Matteo Daniele</span>
-                    <div class="badge-giornata">
-                        G1: 49.5 pt &nbsp;|&nbsp; 14.0 F1
-                    </div>
-                </div>
-                <div class="scores-container">
-                    <div class="score-box">
-                        <span class="pts-f1-total">14.0</span>
-                        <span class="label-f1">Punti F1</span>
-                    </div>
-                    <div class="score-box">
-                        <span class="pts-real-total">49.5</span>
-                        <span class="label-real">Punti Reali</span>
-                    </div>
-                </div>
-            </li>
-        
-            <li class="fanta-item">
-                <span class="pos">16.</span>
-                <div class="info">
-                    <span class="nick">Al-efò</span>
-                    <span class="coach">Alessandro del Giudice</span>
-                    <div class="badge-giornata">
-                        G1: 49.0 pt &nbsp;|&nbsp; 7.5 F1
-                    </div>
-                </div>
-                <div class="scores-container">
-                    <div class="score-box">
-                        <span class="pts-f1-total">7.5</span>
-                        <span class="label-f1">Punti F1</span>
-                    </div>
-                    <div class="score-box">
-                        <span class="pts-real-total">49.0</span>
-                        <span class="label-real">Punti Reali</span>
-                    </div>
-                </div>
-            </li>
-        
-            <li class="fanta-item">
-                <span class="pos">17.</span>
-                <div class="info">
-                    <span class="nick">CXCalcio</span>
-                    <span class="coach">Andrea Lamola</span>
-                    <div class="badge-giornata">
-                        G1: 49.0 pt &nbsp;|&nbsp; 7.5 F1
-                    </div>
-                </div>
-                <div class="scores-container">
-                    <div class="score-box">
-                        <span class="pts-f1-total">7.5</span>
-                        <span class="label-f1">Punti F1</span>
-                    </div>
-                    <div class="score-box">
-                        <span class="pts-real-total">49.0</span>
-                        <span class="label-real">Punti Reali</span>
-                    </div>
-                </div>
-            </li>
-        
-            <li class="fanta-item">
                 <span class="pos">18.</span>
                 <div class="info">
-                    <span class="nick">Amatriciccio</span>
-                    <span class="coach">Luigi Vaira</span>
+                    <span class="nick">Al-efo </span>
+                    <span class="coach">Alessandro del Giudice</span>
                     <div class="badge-giornata">
-                        G1: 49.0 pt &nbsp;|&nbsp; 7.5 F1
+                        G2: 55.5 pt &nbsp;|&nbsp; 25.0 F1
                     </div>
                 </div>
                 <div class="scores-container">
                     <div class="score-box">
-                        <span class="pts-f1-total">7.5</span>
+                        <span class="pts-f1-total">32.5</span>
                         <span class="label-f1">Punti F1</span>
                     </div>
                     <div class="score-box">
-                        <span class="pts-real-total">49.0</span>
+                        <span class="pts-real-total">104.5</span>
                         <span class="label-real">Punti Reali</span>
                     </div>
                 </div>
@@ -459,19 +459,19 @@
             <li class="fanta-item">
                 <span class="pos">19.</span>
                 <div class="info">
-                    <span class="nick">Master</span>
-                    <span class="coach">Alessandro  Mastromatteo </span>
+                    <span class="nick">inazuma seven</span>
+                    <span class="coach">Cataldo Sapio</span>
                     <div class="badge-giornata">
-                        G1: 49.0 pt &nbsp;|&nbsp; 7.5 F1
+                        G2: 53.0 pt &nbsp;|&nbsp; 12.0 F1
                     </div>
                 </div>
                 <div class="scores-container">
                     <div class="score-box">
-                        <span class="pts-f1-total">7.5</span>
+                        <span class="pts-f1-total">26.0</span>
                         <span class="label-f1">Punti F1</span>
                     </div>
                     <div class="score-box">
-                        <span class="pts-real-total">49.0</span>
+                        <span class="pts-real-total">102.5</span>
                         <span class="label-real">Punti Reali</span>
                     </div>
                 </div>
@@ -480,19 +480,19 @@
             <li class="fanta-item">
                 <span class="pos">20.</span>
                 <div class="info">
-                    <span class="nick">wagliunastr</span>
-                    <span class="coach">Marco Montrano</span>
+                    <span class="nick">Calippos </span>
+                    <span class="coach">Marco  Cucinelli </span>
                     <div class="badge-giornata">
-                        G1: 49.0 pt &nbsp;|&nbsp; 7.5 F1
+                        G2: 55.0 pt &nbsp;|&nbsp; 20.0 F1
                     </div>
                 </div>
                 <div class="scores-container">
                     <div class="score-box">
-                        <span class="pts-f1-total">7.5</span>
+                        <span class="pts-f1-total">23.0</span>
                         <span class="label-f1">Punti F1</span>
                     </div>
                     <div class="score-box">
-                        <span class="pts-real-total">49.0</span>
+                        <span class="pts-real-total">103.0</span>
                         <span class="label-real">Punti Reali</span>
                     </div>
                 </div>
@@ -501,10 +501,157 @@
             <li class="fanta-item">
                 <span class="pos">21.</span>
                 <div class="info">
-                    <span class="nick">Squadra Materasso</span>
-                    <span class="coach">Riccardo Roscica</span>
+                    <span class="nick">idose </span>
+                    <span class="coach">Francesco  Conte </span>
                     <div class="badge-giornata">
-                        G1: 49.0 pt &nbsp;|&nbsp; 7.5 F1
+                        G2: nan pt &nbsp;|&nbsp; nan F1
+                    </div>
+                </div>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <span class="pts-f1-total">21.0</span>
+                        <span class="label-f1">Punti F1</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="pts-real-total">50.0</span>
+                        <span class="label-real">Punti Reali</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="fanta-item">
+                <span class="pos">22.</span>
+                <div class="info">
+                    <span class="nick">Chiavares</span>
+                    <span class="coach">Gianvito  Fella</span>
+                    <div class="badge-giornata">
+                        G2: nan pt &nbsp;|&nbsp; nan F1
+                    </div>
+                </div>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <span class="pts-f1-total">21.0</span>
+                        <span class="label-f1">Punti F1</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="pts-real-total">50.0</span>
+                        <span class="label-real">Punti Reali</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="fanta-item">
+                <span class="pos">23.</span>
+                <div class="info">
+                    <span class="nick">Biboux</span>
+                    <span class="coach">Marilù Manzari</span>
+                    <div class="badge-giornata">
+                        G2: nan pt &nbsp;|&nbsp; nan F1
+                    </div>
+                </div>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <span class="pts-f1-total">21.0</span>
+                        <span class="label-f1">Punti F1</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="pts-real-total">50.0</span>
+                        <span class="label-real">Punti Reali</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="fanta-item">
+                <span class="pos">24.</span>
+                <div class="info">
+                    <span class="nick">Alimini Lakes </span>
+                    <span class="coach">Paolo Almiento</span>
+                    <div class="badge-giornata">
+                        G2: 54.5 pt &nbsp;|&nbsp; 17.0 F1
+                    </div>
+                </div>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <span class="pts-f1-total">18.0</span>
+                        <span class="label-f1">Punti F1</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="pts-real-total">101.0</span>
+                        <span class="label-real">Punti Reali</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="fanta-item">
+                <span class="pos">25.</span>
+                <div class="info">
+                    <span class="nick">Canaus</span>
+                    <span class="coach">Michele Ventola</span>
+                    <div class="badge-giornata">
+                        G2: 54.5 pt &nbsp;|&nbsp; 17.0 F1
+                    </div>
+                </div>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <span class="pts-f1-total">17.3</span>
+                        <span class="label-f1">Punti F1</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="pts-real-total">54.5</span>
+                        <span class="label-real">Punti Reali</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="fanta-item">
+                <span class="pos">26.</span>
+                <div class="info">
+                    <span class="nick">A.S.KUGA</span>
+                    <span class="coach">Alessandro  Guerra </span>
+                    <div class="badge-giornata">
+                        G2: 53.5 pt &nbsp;|&nbsp; 14.0 F1
+                    </div>
+                </div>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <span class="pts-f1-total">15.0</span>
+                        <span class="label-f1">Punti F1</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="pts-real-total">90.0</span>
+                        <span class="label-real">Punti Reali</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="fanta-item">
+                <span class="pos">27.</span>
+                <div class="info">
+                    <span class="nick">eterna fedeltà</span>
+                    <span class="coach">Dylan Todisco</span>
+                    <div class="badge-giornata">
+                        G2: 52.5 pt &nbsp;|&nbsp; 10.0 F1
+                    </div>
+                </div>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <span class="pts-f1-total">10.3</span>
+                        <span class="label-f1">Punti F1</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="pts-real-total">52.5</span>
+                        <span class="label-real">Punti Reali</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="fanta-item">
+                <span class="pos">28.</span>
+                <div class="info">
+                    <span class="nick">CXCalcio</span>
+                    <span class="coach">Andrea Lamola</span>
+                    <div class="badge-giornata">
+                        G2: nan pt &nbsp;|&nbsp; nan F1
                     </div>
                 </div>
                 <div class="scores-container">
@@ -520,12 +667,138 @@
             </li>
         
             <li class="fanta-item">
-                <span class="pos">22.</span>
+                <span class="pos">29.</span>
+                <div class="info">
+                    <span class="nick">Amatriciccio</span>
+                    <span class="coach">Luigi Vaira</span>
+                    <div class="badge-giornata">
+                        G2: nan pt &nbsp;|&nbsp; nan F1
+                    </div>
+                </div>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <span class="pts-f1-total">7.5</span>
+                        <span class="label-f1">Punti F1</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="pts-real-total">49.0</span>
+                        <span class="label-real">Punti Reali</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="fanta-item">
+                <span class="pos">30.</span>
+                <div class="info">
+                    <span class="nick">Master</span>
+                    <span class="coach">Alessandro  Mastromatteo </span>
+                    <div class="badge-giornata">
+                        G2: nan pt &nbsp;|&nbsp; nan F1
+                    </div>
+                </div>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <span class="pts-f1-total">7.5</span>
+                        <span class="label-f1">Punti F1</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="pts-real-total">49.0</span>
+                        <span class="label-real">Punti Reali</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="fanta-item">
+                <span class="pos">31.</span>
+                <div class="info">
+                    <span class="nick">Squadra Materasso</span>
+                    <span class="coach">Riccardo Roscica</span>
+                    <div class="badge-giornata">
+                        G2: nan pt &nbsp;|&nbsp; nan F1
+                    </div>
+                </div>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <span class="pts-f1-total">7.5</span>
+                        <span class="label-f1">Punti F1</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="pts-real-total">49.0</span>
+                        <span class="label-real">Punti Reali</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="fanta-item">
+                <span class="pos">32.</span>
+                <div class="info">
+                    <span class="nick">Barcolla ma non molla </span>
+                    <span class="coach">Fabiano Tafaro</span>
+                    <div class="badge-giornata">
+                        G2: 50.5 pt &nbsp;|&nbsp; 6.0 F1
+                    </div>
+                </div>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <span class="pts-f1-total">7.0</span>
+                        <span class="label-f1">Punti F1</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="pts-real-total">92.5</span>
+                        <span class="label-real">Punti Reali</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="fanta-item">
+                <span class="pos">33.</span>
+                <div class="info">
+                    <span class="nick">ZINZ-SQUAD</span>
+                    <span class="coach">FABIOLA LAERA</span>
+                    <div class="badge-giornata">
+                        G2: 50.5 pt &nbsp;|&nbsp; 6.0 F1
+                    </div>
+                </div>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <span class="pts-f1-total">6.0</span>
+                        <span class="label-f1">Punti F1</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="pts-real-total">50.5</span>
+                        <span class="label-real">Punti Reali</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="fanta-item">
+                <span class="pos">34.</span>
+                <div class="info">
+                    <span class="nick">Silarm</span>
+                    <span class="coach">marco  accetta</span>
+                    <div class="badge-giornata">
+                        G2: 50.0 pt &nbsp;|&nbsp; 4.0 F1
+                    </div>
+                </div>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <span class="pts-f1-total">4.0</span>
+                        <span class="label-f1">Punti F1</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="pts-real-total">50.0</span>
+                        <span class="label-real">Punti Reali</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="fanta-item">
+                <span class="pos">35.</span>
                 <div class="info">
                     <span class="nick">dadda paura</span>
                     <span class="coach">matteo senatore</span>
                     <div class="badge-giornata">
-                        G1: 48.5 pt &nbsp;|&nbsp; 4.0 F1
+                        G2: nan pt &nbsp;|&nbsp; nan F1
                     </div>
                 </div>
                 <div class="scores-container">
@@ -541,12 +814,12 @@
             </li>
         
             <li class="fanta-item">
-                <span class="pos">23.</span>
+                <span class="pos">36.</span>
                 <div class="info">
-                    <span class="nick">Fight club </span>
-                    <span class="coach">Bogdan  Markov </span>
+                    <span class="nick">Imperial seven</span>
+                    <span class="coach">Gabriele Ferrandino</span>
                     <div class="badge-giornata">
-                        G1: 48.0 pt &nbsp;|&nbsp; 3.0 F1
+                        G2: 48.5 pt &nbsp;|&nbsp; 2.0 F1
                     </div>
                 </div>
                 <div class="scores-container">
@@ -555,19 +828,19 @@
                         <span class="label-f1">Punti F1</span>
                     </div>
                     <div class="score-box">
-                        <span class="pts-real-total">48.0</span>
+                        <span class="pts-real-total">85.0</span>
                         <span class="label-real">Punti Reali</span>
                     </div>
                 </div>
             </li>
         
             <li class="fanta-item">
-                <span class="pos">24.</span>
+                <span class="pos">37.</span>
                 <div class="info">
                     <span class="nick">GinTonic FC</span>
                     <span class="coach">Gianvito Lenoci</span>
                     <div class="badge-giornata">
-                        G1: 47.5 pt &nbsp;|&nbsp; 2.0 F1
+                        G2: nan pt &nbsp;|&nbsp; nan F1
                     </div>
                 </div>
                 <div class="scores-container">
@@ -583,33 +856,12 @@
             </li>
         
             <li class="fanta-item">
-                <span class="pos">25.</span>
-                <div class="info">
-                    <span class="nick">Marlboro gol</span>
-                    <span class="coach">Cosimo D’Onghia</span>
-                    <div class="badge-giornata">
-                        G1: 47.0 pt &nbsp;|&nbsp; 1.0 F1
-                    </div>
-                </div>
-                <div class="scores-container">
-                    <div class="score-box">
-                        <span class="pts-f1-total">1.0</span>
-                        <span class="label-f1">Punti F1</span>
-                    </div>
-                    <div class="score-box">
-                        <span class="pts-real-total">47.0</span>
-                        <span class="label-real">Punti Reali</span>
-                    </div>
-                </div>
-            </li>
-        
-            <li class="fanta-item">
-                <span class="pos">26.</span>
+                <span class="pos">38.</span>
                 <div class="info">
                     <span class="nick">pluncake </span>
                     <span class="coach">alice perchinenna</span>
                     <div class="badge-giornata">
-                        G1: 46.5 pt &nbsp;|&nbsp; 1.0 F1
+                        G2: nan pt &nbsp;|&nbsp; nan F1
                     </div>
                 </div>
                 <div class="scores-container">
@@ -625,12 +877,12 @@
             </li>
         
             <li class="fanta-item">
-                <span class="pos">27.</span>
+                <span class="pos">39.</span>
                 <div class="info">
                     <span class="nick">LasimeSquad</span>
                     <span class="coach">Sara Simeone </span>
                     <div class="badge-giornata">
-                        G1: 46.5 pt &nbsp;|&nbsp; 1.0 F1
+                        G2: nan pt &nbsp;|&nbsp; nan F1
                     </div>
                 </div>
                 <div class="scores-container">
@@ -646,33 +898,12 @@
             </li>
         
             <li class="fanta-item">
-                <span class="pos">28.</span>
-                <div class="info">
-                    <span class="nick">ALIMINI LAKES</span>
-                    <span class="coach">Paolo Almiento </span>
-                    <div class="badge-giornata">
-                        G1: 46.5 pt &nbsp;|&nbsp; 1.0 F1
-                    </div>
-                </div>
-                <div class="scores-container">
-                    <div class="score-box">
-                        <span class="pts-f1-total">1.0</span>
-                        <span class="label-f1">Punti F1</span>
-                    </div>
-                    <div class="score-box">
-                        <span class="pts-real-total">46.5</span>
-                        <span class="label-real">Punti Reali</span>
-                    </div>
-                </div>
-            </li>
-        
-            <li class="fanta-item">
-                <span class="pos">29.</span>
+                <span class="pos">40.</span>
                 <div class="info">
                     <span class="nick">chi fermerà la musica </span>
                     <span class="coach">Silvia Canosa</span>
                     <div class="badge-giornata">
-                        G1: 46.5 pt &nbsp;|&nbsp; 1.0 F1
+                        G2: nan pt &nbsp;|&nbsp; nan F1
                     </div>
                 </div>
                 <div class="scores-container">
@@ -688,12 +919,12 @@
             </li>
         
             <li class="fanta-item">
-                <span class="pos">30.</span>
+                <span class="pos">41.</span>
                 <div class="info">
                     <span class="nick">Uferraren </span>
                     <span class="coach">Andrea Fundone</span>
                     <div class="badge-giornata">
-                        G1: 45.5 pt &nbsp;|&nbsp; 1.0 F1
+                        G2: nan pt &nbsp;|&nbsp; nan F1
                     </div>
                 </div>
                 <div class="scores-container">
@@ -709,12 +940,12 @@
             </li>
         
             <li class="fanta-item">
-                <span class="pos">31.</span>
+                <span class="pos">42.</span>
                 <div class="info">
-                    <span class="nick">Barcolla ma non molla </span>
-                    <span class="coach">Fabiano  Tafaro </span>
+                    <span class="nick">Real Madrink</span>
+                    <span class="coach">Raffaele Guerra</span>
                     <div class="badge-giornata">
-                        G1: 42.0 pt &nbsp;|&nbsp; 1.0 F1
+                        G2: 43.5 pt &nbsp;|&nbsp; 1.0 F1
                     </div>
                 </div>
                 <div class="scores-container">
@@ -723,19 +954,19 @@
                         <span class="label-f1">Punti F1</span>
                     </div>
                     <div class="score-box">
-                        <span class="pts-real-total">42.0</span>
+                        <span class="pts-real-total">43.5</span>
                         <span class="label-real">Punti Reali</span>
                     </div>
                 </div>
             </li>
         
             <li class="fanta-item">
-                <span class="pos">32.</span>
+                <span class="pos">43.</span>
                 <div class="info">
                     <span class="nick">Primaera</span>
                     <span class="coach">desiree totaro </span>
                     <div class="badge-giornata">
-                        G1: 41.0 pt &nbsp;|&nbsp; 1.0 F1
+                        G2: nan pt &nbsp;|&nbsp; nan F1
                     </div>
                 </div>
                 <div class="scores-container">
@@ -751,12 +982,12 @@
             </li>
         
             <li class="fanta-item">
-                <span class="pos">33.</span>
+                <span class="pos">44.</span>
                 <div class="info">
                     <span class="nick">I cascavadd</span>
                     <span class="coach">Antonio  Boccone</span>
                     <div class="badge-giornata">
-                        G1: 40.5 pt &nbsp;|&nbsp; 1.0 F1
+                        G2: nan pt &nbsp;|&nbsp; nan F1
                     </div>
                 </div>
                 <div class="scores-container">
@@ -772,12 +1003,12 @@
             </li>
         
             <li class="fanta-item">
-                <span class="pos">34.</span>
+                <span class="pos">45.</span>
                 <div class="info">
                     <span class="nick">Incredibili 7</span>
                     <span class="coach">Michele  Calderoni </span>
                     <div class="badge-giornata">
-                        G1: 37.5 pt &nbsp;|&nbsp; 1.0 F1
+                        G2: nan pt &nbsp;|&nbsp; nan F1
                     </div>
                 </div>
                 <div class="scores-container">
@@ -793,75 +1024,12 @@
             </li>
         
             <li class="fanta-item">
-                <span class="pos">35.</span>
-                <div class="info">
-                    <span class="nick">U Fogg è nu squadron</span>
-                    <span class="coach">Gabriele Ferrandino</span>
-                    <div class="badge-giornata">
-                        G1: 36.5 pt &nbsp;|&nbsp; 1.0 F1
-                    </div>
-                </div>
-                <div class="scores-container">
-                    <div class="score-box">
-                        <span class="pts-f1-total">1.0</span>
-                        <span class="label-f1">Punti F1</span>
-                    </div>
-                    <div class="score-box">
-                        <span class="pts-real-total">36.5</span>
-                        <span class="label-real">Punti Reali</span>
-                    </div>
-                </div>
-            </li>
-        
-            <li class="fanta-item">
-                <span class="pos">36.</span>
-                <div class="info">
-                    <span class="nick">A.S. KUGA</span>
-                    <span class="coach">Alessandro  Guerra</span>
-                    <div class="badge-giornata">
-                        G1: 36.5 pt &nbsp;|&nbsp; 1.0 F1
-                    </div>
-                </div>
-                <div class="scores-container">
-                    <div class="score-box">
-                        <span class="pts-f1-total">1.0</span>
-                        <span class="label-f1">Punti F1</span>
-                    </div>
-                    <div class="score-box">
-                        <span class="pts-real-total">36.5</span>
-                        <span class="label-real">Punti Reali</span>
-                    </div>
-                </div>
-            </li>
-        
-            <li class="fanta-item">
-                <span class="pos">37.</span>
-                <div class="info">
-                    <span class="nick">Benito</span>
-                    <span class="coach">Gabriele  Lanza</span>
-                    <div class="badge-giornata">
-                        G1: 36.0 pt &nbsp;|&nbsp; 1.0 F1
-                    </div>
-                </div>
-                <div class="scores-container">
-                    <div class="score-box">
-                        <span class="pts-f1-total">1.0</span>
-                        <span class="label-f1">Punti F1</span>
-                    </div>
-                    <div class="score-box">
-                        <span class="pts-real-total">36.0</span>
-                        <span class="label-real">Punti Reali</span>
-                    </div>
-                </div>
-            </li>
-        
-            <li class="fanta-item">
-                <span class="pos">38.</span>
+                <span class="pos">46.</span>
                 <div class="info">
                     <span class="nick">Kiókió</span>
                     <span class="coach">Antonio Fuzio</span>
                     <div class="badge-giornata">
-                        G1: 35.0 pt &nbsp;|&nbsp; 1.0 F1
+                        G2: nan pt &nbsp;|&nbsp; nan F1
                     </div>
                 </div>
                 <div class="scores-container">
@@ -877,12 +1045,33 @@
             </li>
         
             <li class="fanta-item">
-                <span class="pos">39.</span>
+                <span class="pos">47.</span>
+                <div class="info">
+                    <span class="nick">Parrocchia sant’alfonso</span>
+                    <span class="coach">Francesco Albanese</span>
+                    <div class="badge-giornata">
+                        G2: 0.0 pt &nbsp;|&nbsp; 1.0 F1
+                    </div>
+                </div>
+                <div class="scores-container">
+                    <div class="score-box">
+                        <span class="pts-f1-total">1.0</span>
+                        <span class="label-f1">Punti F1</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="pts-real-total">0.0</span>
+                        <span class="label-real">Punti Reali</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="fanta-item">
+                <span class="pos">48.</span>
                 <div class="info">
                     <span class="nick">Bea e cami </span>
                     <span class="coach">Beatrice Pastore</span>
                     <div class="badge-giornata">
-                        G1: 0.0 pt &nbsp;|&nbsp; 0.3 F1
+                        G2: nan pt &nbsp;|&nbsp; nan F1
                     </div>
                 </div>
                 <div class="scores-container">
@@ -898,12 +1087,12 @@
             </li>
         
             <li class="fanta-item">
-                <span class="pos">40.</span>
+                <span class="pos">49.</span>
                 <div class="info">
                     <span class="nick">Riccardo Santovito </span>
                     <span class="coach">Alessandro  Blandamura </span>
                     <div class="badge-giornata">
-                        G1: 0.0 pt &nbsp;|&nbsp; 0.3 F1
+                        G2: nan pt &nbsp;|&nbsp; nan F1
                     </div>
                 </div>
                 <div class="scores-container">
@@ -919,12 +1108,12 @@
             </li>
         
             <li class="fanta-item">
-                <span class="pos">41.</span>
+                <span class="pos">50.</span>
                 <div class="info">
                     <span class="nick">patatine</span>
                     <span class="coach">ludovica  caracciolo </span>
                     <div class="badge-giornata">
-                        G1: 0.0 pt &nbsp;|&nbsp; 0.3 F1
+                        G2: nan pt &nbsp;|&nbsp; nan F1
                     </div>
                 </div>
                 <div class="scores-container">
@@ -940,12 +1129,12 @@
             </li>
         
             <li class="fanta-item">
-                <span class="pos">42.</span>
+                <span class="pos">51.</span>
                 <div class="info">
                     <span class="nick">milck shake</span>
                     <span class="coach">Graziana Mianulli</span>
                     <div class="badge-giornata">
-                        G1: 0.0 pt &nbsp;|&nbsp; 0.3 F1
+                        G2: nan pt &nbsp;|&nbsp; nan F1
                     </div>
                 </div>
                 <div class="scores-container">
@@ -961,54 +1150,12 @@
             </li>
         
             <li class="fanta-item">
-                <span class="pos">43.</span>
+                <span class="pos">52.</span>
                 <div class="info">
                     <span class="nick">FC Tempest</span>
                     <span class="coach">lorenzo  gentile </span>
                     <div class="badge-giornata">
-                        G1: 0.0 pt &nbsp;|&nbsp; 0.3 F1
-                    </div>
-                </div>
-                <div class="scores-container">
-                    <div class="score-box">
-                        <span class="pts-f1-total">0.3</span>
-                        <span class="label-f1">Punti F1</span>
-                    </div>
-                    <div class="score-box">
-                        <span class="pts-real-total">0.0</span>
-                        <span class="label-real">Punti Reali</span>
-                    </div>
-                </div>
-            </li>
-        
-            <li class="fanta-item">
-                <span class="pos">44.</span>
-                <div class="info">
-                    <span class="nick">Li bomber</span>
-                    <span class="coach">Michele Ventola</span>
-                    <div class="badge-giornata">
-                        G1: 0.0 pt &nbsp;|&nbsp; 0.3 F1
-                    </div>
-                </div>
-                <div class="scores-container">
-                    <div class="score-box">
-                        <span class="pts-f1-total">0.3</span>
-                        <span class="label-f1">Punti F1</span>
-                    </div>
-                    <div class="score-box">
-                        <span class="pts-real-total">0.0</span>
-                        <span class="label-real">Punti Reali</span>
-                    </div>
-                </div>
-            </li>
-        
-            <li class="fanta-item">
-                <span class="pos">45.</span>
-                <div class="info">
-                    <span class="nick">ingiocabili Fc</span>
-                    <span class="coach">Dylan Todisco</span>
-                    <div class="badge-giornata">
-                        G1: 0.0 pt &nbsp;|&nbsp; 0.3 F1
+                        G2: nan pt &nbsp;|&nbsp; nan F1
                     </div>
                 </div>
                 <div class="scores-container">
@@ -1047,7 +1194,7 @@
     </main>
 
     <footer class="fanta-footer">
-        Aggiornato al: 11/04/2026 17:51:17
+        Aggiornato al: 28/04/2026 21:59:26
     </footer>
 </body>
 </html>
