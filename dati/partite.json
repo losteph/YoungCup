@@ -189,17 +189,28 @@
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
-    "data": "??", "ora": "20:40", "campo": "Cofit Club"
+    "data": "??", "ora": "21:00", "campo": "Cofit Club"
   },
   {
-    "giornata": 6, 
+    "giornata": 7, 
     "fase": "playoff",
-    "descrizione": "Finale",
+    "descrizione": "Finale (1 vs 2)",
     "squadraCasa": "Da definire",
     "squadraOspite": "Da definire",
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
-    "data": "??", "ora": "21:20", "campo": "Cofit Club"
+    "data": "??", "ora": "20:00", "campo": "Cofit Club"
+  },
+    {
+    "giornata": 7, 
+    "fase": "playoff",
+    "descrizione": "Finale (3 vs 4)",
+    "squadraCasa": "Da definire",
+    "squadraOspite": "Da definire",
+    "golCasa": null,
+    "golOspite": null,
+    "status": "da giocare",
+    "data": "??", "ora": "21:00", "campo": "Cofit Club"
   }
 ]
