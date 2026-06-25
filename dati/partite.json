@@ -172,24 +172,24 @@
   {
     "giornata": 6, 
     "fase": "playoff",
-    "descrizione": "Semifinale 1 (1ª vs 4ª)",
-    "squadraCasa": "Sangu FC",
-    "squadraOspite": "Imperial Seven",
-    "golCasa": null,
-    "golOspite": null,
-    "status": "da giocare",
-    "data": "??", "ora": "20:00", "campo": "Cofit Club"
-  },
-  {
-    "giornata": 6, 
-    "fase": "playoff",
     "descrizione": "Semifinale 2 (2ª vs 3ª)",
     "squadraCasa": "Real MyDrip",
     "squadraOspite": "Wild Boys",
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
-    "data": "??", "ora": "21:00", "campo": "Cofit Club"
+    "data": "29/06", "ora": "20:00", "campo": "Cofit Club"
+  },
+  {
+    "giornata": 6, 
+    "fase": "playoff",
+    "descrizione": "Semifinale 1 (1ª vs 4ª)",
+    "squadraCasa": "Sangu FC",
+    "squadraOspite": "Imperial Seven",
+    "golCasa": null,
+    "golOspite": null,
+    "status": "da giocare",
+    "data": "29/06", "ora": "21:00", "campo": "Cofit Club"
   },
   {
     "giornata": 6, 
@@ -202,7 +202,7 @@
     "status": "da giocare",
     "data": "??", "ora": "20:00", "campo": "Cofit Club"
   },
-    {
+  {
     "giornata": 6, 
     "fase": "playoff",
     "descrizione": "Finale (3 vs 4)",
