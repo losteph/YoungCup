@@ -186,9 +186,9 @@
     "descrizione": "Semifinale 1 (1ª vs 4ª)",
     "squadraCasa": "Sangu FC",
     "squadraOspite": "Imperial Seven",
-    "golCasa": null,
-    "golOspite": null,
-    "status": "da giocare",
+    "golCasa": 4,
+    "golOspite": 3,
+    "status": "giocata",
     "data": "29/06", "ora": "21:00", "campo": "Cofit Club"
   },
   {
