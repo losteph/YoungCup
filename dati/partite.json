@@ -175,8 +175,8 @@
     "descrizione": "Semifinale 2 (2ª vs 3ª)",
     "squadraCasa": "Real MyDrip",
     "squadraOspite": "Wild Boys",
-    "golCasa": null,
-    "golOspite": null,
+    "golCasa": 5,
+    "golOspite": 3,
     "status": "da giocare",
     "data": "29/06", "ora": "20:00", "campo": "Cofit Club"
   },
