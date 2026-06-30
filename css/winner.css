@@ -1,35 +1,59 @@
-.champion-box {
-    background: linear-gradient(135deg, #0a2f5c 0%, #1a4a8a 100%);
-    color: #fff;
-    text-align: center;
-    padding: 25px;
-    border-radius: 8px;
-    margin-bottom: 30px;
-    border: 3px solid #d4af37;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+/* Banner Campioni in stile Partita */
+.banner-campioni {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #d4af37; /* Bordo oro come i playoff */
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    background-color: #fffdf0; /* Sfondo giallino chiarissimo, come i playoff */
+    box-shadow: 0 2px 6px rgba(212, 175, 55, 0.1);
 }
 
-.champion-crown {
-    color: #d4af37;
+/* Scritta Corona: in ITALIC (Alternato) */
+.campioni-corona {
+    font-size: 0.85em;
+    color: #b8860b; /* Oro scuro scuro */
     font-weight: bold;
-    font-size: 1.2em;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-}
-
-.champion-logo {
-    width: 90px;
-    height: 90px;
-    object-fit: contain;
-    margin: 10px auto;
-    display: block;
-    filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.3)); /* Da un effetto 3D al logo */
-}
-
-.champion-name {
-    font-size: 1.8em;
-    font-weight: bold;
+    font-style: italic; /* <--- Italic qui */
+    letter-spacing: 1.5px;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #fff;
+    margin-bottom: 8px;
+}
+
+/* Gruppo Logo + Nome centrati */
+.campioni-team {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Spazio tra logo e nome */
+}
+
+/* Logo: Poco più grande di quello delle partite (che è 50px), facciamo 60px */
+.logo-campione {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* Nome Squadra: BOLD (Alternato) */
+.nome-campione {
+    font-size: 1.4em;
+    font-weight: 800; /* <--- Ultra Bold qui */
+    color: #0a2f5c;   /* Blu scuro del tuo sito */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Regola per il Mobile: rimane tutto in linea senza rompersi */
+@media (max-width: 600px) {
+    .nome-campione {
+        font-size: 1.2em; /* Rimpicciolisce un pelo il font sui telefoni */
+    }
+    .logo-campione {
+        width: 50px; /* Su mobile diventa grande esattamente come quello delle partite */
+        height: 50px;
+    }
 }
