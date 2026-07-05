@@ -194,7 +194,7 @@
   {
     "giornata": 6, 
     "fase": "playoff",
-    "descrizione": "Finale (3ª vs 4ª)",
+    "descrizione": "Finalina",
     "squadraCasa": "Wild Boys",
     "squadraOspite": "Imperial Seven",
     "golCasa": null,
@@ -205,12 +205,12 @@
   {
     "giornata": 6, 
     "fase": "playoff",
-    "descrizione": "Finale (1ª vs 2ª)",
+    "descrizione": "Finale",
     "squadraCasa": "Sangu FC",
     "squadraOspite": "Real MyDrip",
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
-    "data": "??", "ora": "??:00", "campo": "Cofit Club"
+    "data": "07/07", "ora": "20:00", "campo": "Cofit Club"
   }
 ]
