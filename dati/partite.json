@@ -197,9 +197,9 @@
     "descrizione": "Finale",
     "squadraCasa": "Sangu FC",
     "squadraOspite": "Real MyDrip",
-    "golCasa": null,
-    "golOspite": null,
-    "status": "da giocare",
+    "golCasa": 3,
+    "golOspite": 5,
+    "status": "giocata",
     "data": "07/07", "ora": "22:00", "campo": "Cofit Club"
   }
 ]
